@@ -1,10 +1,11 @@
 <?php
 
-$number=37;
-$name="ALi";
+$person1=23;
+$person2=47;
 
-echo $name."<br/>".$number."<br/>";
-echo "Hello World";
+$person3=$person1+$person2/2;
+
+echo $person3*2,$person1,$person2*3;
 
 
 
