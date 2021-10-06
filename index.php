@@ -12,3 +12,19 @@
     <button onclick="add()">Check</button>
 </body>
 </html>
+
+<script>
+   async function add(){
+     let response= await fetch("http://localhost/PHP/server.php")
+     let data = await response.json()
+
+     if(data=="Hallo")
+     {
+         document.getElementById("result").innerHTML=response.$num1
+     }
+     else{
+        document.getElementById("result").innerHTML=response.$num1
+     }
+
+    }
+</script>
