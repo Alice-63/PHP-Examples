@@ -1,30 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p id="result"></p>
-    are you online?
-    <button onclick="add()">Check</button>
-</body>
-</html>
+<?php
 
-<script>
-   async function add(){
-     let response= await fetch("http://localhost/PHP/server.php")
-     let data = await response.json()
+$num1=10;
+$num2=50;
 
-     if(data=="Hallo")
-     {
-         document.getElementById("result").innerHTML=response.$num1
-     }
-     else{
-        document.getElementById("result").innerHTML=response.$num1
-     }
 
-    }
-</script>
+echo $plus=$num1+$num2."<br/>";
+echo $minus=$num2-$num1."<br/>";
+echo $num1*$num2."<br/>";
+echo $num1/$num2."<br/>";
+echo $num2%$num1."<br/>";
+echo $num2==$num1
+
+?>
