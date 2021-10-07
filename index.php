@@ -14,8 +14,8 @@ $persons=array(
     );
 
 
-   
-echo "$persons["Person"]"
+    print_r($persons["Person"]["name"]);
+
 
 
 
