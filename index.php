@@ -1,16 +1,25 @@
 <?php
 
+$persons=array(
+    "Person"=>array(
+    "name"=> "Veli",
+    "surname"=> "Kayik", 
+    "age"=>"42"),
+
+    "Person2"=>array(
+        "name"=> "Ali",
+         "surname"=> "Cetindag", 
+         "age"=>"37")
+
+    );
 
 
-$names=array("ali","Veli","Kemal","Ahmet");
+   
+echo "$persons["Person"]"
 
-print_r($names);
 
-echo "<hr>";
 
-foreach($names as $name=> $value)
 
-echo "$value <br>"
 
 ?>
 
