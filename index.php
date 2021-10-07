@@ -1,22 +1,19 @@
 <?php
 
-$num1=10;
-$num2=50;
+$day="Monday";
 
 
-if($num2>$num2)
-echo "Hallo";
+switch($day)
+{
+    case "Monday":
+    echo "Erste Tag!";
+    break;
+
+    case:"Saturday":
+        echo "Samstag";
+        break
+}
 
 
-
-else
-
-
-
-echo "Leider"
-
-// else{
-//     echo "Leider"
-// }
 
 ?>
