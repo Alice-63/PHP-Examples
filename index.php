@@ -1,17 +1,20 @@
 <?php
 
-$day="Monday";
+$day="Sali";
 
 
-switch($day)
-{
+switch($day){
+
     case "Monday":
     echo "Erste Tag!";
     break;
 
-    case:"Saturday":
+    case "Saturday":
         echo "Samstag";
-        break
+        break;
+
+    default:
+    echo "Hallo";
 }
 
 
