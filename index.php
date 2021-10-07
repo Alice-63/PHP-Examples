@@ -1,11 +1,12 @@
 <?php
 
 
-for($i=1;$i<=10;$i++)
 
-    echo $i." kedi<br>";
-   
-
+$sayi=8;
+do{
+    echo $sayi."<br>";
+    $sayi++;
+}while($sayi==9)
 
 
 ?>
