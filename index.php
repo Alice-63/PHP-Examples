@@ -5,7 +5,7 @@
 
 function kareAl( $sayi) {
    
-    echo $sayi*$sayi;
+    echo "<h1>$sayi*$sayi</h1>";
 }
 
 kareAl(20)
