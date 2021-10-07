@@ -1,7 +1,7 @@
 <?php
 
 
-echo $_GET["costumer"]. "<br/>". $_GET["email"];
+echo $_POST["personelAdi"]. "<br/>". $_POST["email"];
 
 
 
