@@ -5,10 +5,13 @@
 
 function kareAl( $sayi) {
    
-    echo "<h1>$sayi*$sayi</h1>";
+    return $sayi*$sayi;
+   
 }
 
-kareAl(20)
+$sayi2=4;
+$toplam=$sayi2+ kareAl(20);
+echo $toplam
 
 
 
