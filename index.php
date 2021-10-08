@@ -7,23 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <ul>
-        <li>
-        <?php
-      foreach($persons as $person)
-        {echo $person}
-        ?>
-        </li>
-    </ul>
-      
-        
-      
-
-    <script>
-       
-    </script>
-</body>
-</html>
 <?php
 
 $persons=array(
@@ -44,3 +27,21 @@ $persons=array(
     )
     )
 ?>
+
+
+    <ul>
+        <li>
+        <?php
+      foreach($persons as $person){echo $person}
+        ?>
+        </li>
+    </ul>
+      
+        
+      
+
+    <script>
+       
+    </script>
+</body>
+</html>
