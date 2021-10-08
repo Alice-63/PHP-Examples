@@ -28,8 +28,7 @@
 </html>
 <?php
 
-function add()
-{
-    return "<b>Tikla</b>";
-}
+$persons=array(
+    array=()
+)
 ?>
