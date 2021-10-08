@@ -7,22 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="POST" id="myForm">
-        <input type="text" name="personelAdi">
-        <input type="text" name="email" id="">
-        <button type="submit" onclick="add()">
+    <ul>
+        <li>
         <?php
-       echo add()
-        
+      foreach($persons as $person)
+        {echo $person}
         ?>
+        </li>
+    </ul>
+      
         
-        </button>
-    </form>
+      
 
     <script>
-        function add(){
-           console.log(document.getElementById("myForm").submit())
-        }
+       
     </script>
 </body>
 </html>
