@@ -17,8 +17,8 @@ $persons=array(
         "soyad"=>"Cetin",
         "age"=>7
     )
-    );
+    )
 
-print_r($persons)
+
 
 ?>
