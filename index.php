@@ -29,6 +29,10 @@
 <?php
 
 $persons=array(
-    array=()
+    array=(
+        "isim"=>"Ali",
+        "soyad"=>"Cetin",
+        "age"=>37
+    )
 )
 ?>
