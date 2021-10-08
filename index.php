@@ -29,15 +29,19 @@ $persons=array(
 ?>
 
 
-    <ul>
-        <li>
+    
+        
         <?php
-      foreach($persons as $person)
-      echo $person
-    }
+      foreach($persons as $person){?>
+      <ul>
+        <li><?php echo $person[isim]?> </li>
+        <li><?php echo $person[soyad]?> </li>
+        <li><?php echo $person[age]?> </li>
+        </ul>
+       <?php }
         ?>
-        </li>
-    </ul>
+       
+  
       
         
       
