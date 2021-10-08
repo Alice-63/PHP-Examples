@@ -21,7 +21,7 @@ $persons=array(
         "age"=>10
     ),
     array(
-        "isim"=>"Meryem",
+        "isim"=>"Zeynep",
         "soyad"=>"Cetin",
         "age"=>7
     )
@@ -34,9 +34,9 @@ $persons=array(
         <?php
       foreach($persons as $person){?>
       <ul>
-        <li><?php echo $person[isim]?> </li>
-        <li><?php echo $person[soyad]?> </li>
-        <li><?php echo $person[age]?> </li>
+        <li><?php echo $person["isim"]?> </li>
+        <li><?php echo $person["soyad"]?> </li>
+        <li><?php echo $person["age"]?> </li>
         </ul>
        <?php }
         ?>
