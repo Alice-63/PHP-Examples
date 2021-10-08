@@ -12,7 +12,7 @@
         <input type="text" name="email" id="">
         <button type="submit" onclick="add()">
         <?php
-       echo add(5)
+       echo add()
         
         ?>
         
@@ -28,8 +28,8 @@
 </html>
 <?php
 
-function add($el)
+function add()
 {
-    return $el*$el;
+    return "<b>Tikla</b>";
 }
 ?>
