@@ -7,10 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="POST">
+    <form action="" method="POST" id="myForm">
         <input type="text" name="personelAdi">
         <input type="text" name="email" id="">
-        <button type="submit">Gönder</button>
+        <button type="submit" onclick="add()">Gönder</button>
     </form>
+
+    <script>
+        function add(){
+           console.log(document.getElementById("myForm").submit())
+        }
+    </script>
 </body>
 </html>
