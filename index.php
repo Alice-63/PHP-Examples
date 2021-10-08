@@ -32,7 +32,9 @@ $persons=array(
     <ul>
         <li>
         <?php
-      foreach($persons as $person){echo $person}
+      foreach($persons as $person)
+      echo $person
+    }
         ?>
         </li>
     </ul>
