@@ -29,20 +29,20 @@
 <?php
 
 $persons=array(
-    array=(
+    array(
         "isim"=>"Ali",
         "soyad"=>"Cetin",
         "age"=>37
     ),
-    array=(
+    array(
         "isim"=>"Mustafa",
         "soyad"=>"Cetin",
         "age"=>10
     ),
-    array=(
+    array(
         "isim"=>"Meryem",
         "soyad"=>"Cetin",
         "age"=>7
     )
-)
+    )
 ?>
