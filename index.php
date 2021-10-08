@@ -12,7 +12,7 @@
         <input type="text" name="email" id="">
         <button type="submit" onclick="add()">
         <?php
-        add(5)
+       echo add(5)
         
         ?>
         
@@ -28,8 +28,8 @@
 </html>
 <?php
 
-function add(el)
+function add($el)
 {
-    return el*el;
+    return $el*$el;
 }
 ?>
