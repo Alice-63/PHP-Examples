@@ -19,11 +19,6 @@ $persons=array(
         "isim"=>"Mustafa",
         "soyad"=>"Cetin",
         "age"=>10
-    ),
-    array(
-        "isim"=>"Zeynep",
-        "soyad"=>"Cetin",
-        "age"=>7
     )
     )
 ?>
