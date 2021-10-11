@@ -7,16 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-<?php
 
-$persons=array(
-    array(
-        "isim"=>"Ali",
-        "soyad"=>"Cetin",
-        "age"=>37
-    )
-    )
-?>
 
 
     
