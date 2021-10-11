@@ -14,6 +14,11 @@ $persons=array(
         "isim"=>"Ali",
         "soyad"=>"Cetin",
         "age"=>37
+    ),
+    array(
+        "isim"=>"Mustafa",
+        "soyad"=>"Cetin",
+        "age"=>10
     )
     )
 ?>
