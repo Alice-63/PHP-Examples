@@ -1,7 +1,7 @@
 
 <div>
 
-    <a href="hakkimizda.php">Anasayfa</a>
-    <a href="">Hakkimizda</a>
-    <a href="">Yeni</a>
+    <a href="index.php">Anasayfa</a>
+    <a href="hakkimizda.php">Hakkimizda</a>
+    <a href="yeni.php">Yeni</a>
 </div>
