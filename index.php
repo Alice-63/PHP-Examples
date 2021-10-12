@@ -11,10 +11,10 @@
         
         <?php
 
-       include("server.phpp");
+       include("server.php");
        
        print_r($persons);
-       
+
        echo "Hello World";
 
 
