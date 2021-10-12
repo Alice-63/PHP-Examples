@@ -11,9 +11,10 @@
         
         <?php
 
-       require("server.phpp");
+       include("server.phpp");
        
        print_r($persons);
+       
        echo "Hello World";
 
 
