@@ -11,11 +11,9 @@
         
         <?php
 
-       include("server.php");
-       
-       print_r($persons);
-
-       echo "Hello World";
+include("menu.php");
+include("main.php");
+include("footer.php")
 
 
 
