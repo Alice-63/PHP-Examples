@@ -7,33 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-
-$persons=array(
-    array(
-        "isim"=>"Ali",
-        "soyad"=>"Cetin",
-        "age"=>37
-    ),
-    array(
-        "isim"=>"Mustafa",
-        "soyad"=>"Cetin",
-        "age"=>10
-    )
-    )
-?>
-
-
-    
+  
         
         <?php
-      foreach($persons as $person){?>
-      <ul>
-        <li><?php echo $person["isim"]?> </li>
-        <li><?php echo $person["soyad"]?> </li>
-        <li><?php echo $person["age"]?> </li>
-        </ul>
-       <?php }
+
+       
+
+
+
+
+
         ?>
        
   
