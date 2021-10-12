@@ -3,6 +3,6 @@ include("menu.php")
 ?>
 <div>
     <h1>
-    ali veli Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, perferendis.
+    ali veli 
     </h1>
 </div>
