@@ -4,7 +4,7 @@
 session_start();
 
 
-$_SESSION["fiyat"]="";
+unset($_SESSION["fiyat"]);
 
 
 print_r($_SESSION)
