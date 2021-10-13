@@ -4,6 +4,6 @@
 session_start();
 
 
-$_SESSION["UrunAdi"] = "Monitor";
+// $_SESSION["UrunAdi"] = "Monitor";
 
-
+print_r($_SESSION);
