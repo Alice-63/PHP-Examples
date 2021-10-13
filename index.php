@@ -13,17 +13,6 @@
 </head>
 <body>
   
-        
-        <?php
-
-include("menu.php");
-include("main.php");
-include("footer.php")
-
-
-
-
-        ?>
        
   
       
