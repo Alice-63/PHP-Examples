@@ -4,7 +4,6 @@
 session_start();
 
 
-unset($_SESSION["Yeni"]);
 
 session_unset();
 
