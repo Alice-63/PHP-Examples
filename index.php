@@ -10,7 +10,7 @@ session_start();
 
 $_SESSION["Yeni"]="Kitap";
 $_SESSION["Eski"]="Tablet";
-$_SESSION["kulüp"]="asagi"
+$_SESSION["kulüp"]="asagi";
 
 
 print_r($_SESSION)
