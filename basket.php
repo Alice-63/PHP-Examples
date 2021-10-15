@@ -24,7 +24,7 @@
             <td><?php echo $product["product_count"]?></td>
             <td><?php echo $product["product_price"]?></td>
             <td><?php echo $product["product_price"]*$product["product_count"]?></td>
-            <td>Del</td>
+            <td><a href="#">Del</a></td>
         </tr>
     </tbody>
 </table>
