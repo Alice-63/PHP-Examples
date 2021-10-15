@@ -20,12 +20,12 @@
 <body>
 
 <?php session_start();
-if($_GET)
+if($_GET){
 
     unset($_SESSION["productList"][$_GET["del"]]);
-    header("Location:basket.php")
-
-
+    header("location:basket.php");
+    
+}
 
 
 ?>
