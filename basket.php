@@ -10,13 +10,20 @@
 
 
 <table>
+    <thead>
+        <th>Product Name</th>
+        <th>Price</th>
+        <th>Count</th>
+        <th>Total</th>
+        <th>[Del]</th>
+    </thead>
     <tbody>
-        <th>Product Name</th>
-        <th>Product Name</th>
-        <th>Product Name</th>
-        <th>Product Name</th>
-
-
+        <tr>
+            <td>a</td>
+            <td>s</td>
+            <td>d</td>
+            <td>f</td>
+        </tr>
     </tbody>
 </table>
     
