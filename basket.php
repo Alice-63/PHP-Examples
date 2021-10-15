@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+<?php session_start();?>
 <table border="1">
     <thead>
         <th>Product Name</th>
@@ -18,11 +18,12 @@
         <th>[Del]</th>
     </thead>
     <tbody>
+    <?php foreach ($_SESSION[productList] as $product)?>
         <tr>
-            <td>a</td>
-            <td>s</td>
-            <td>d</td>
-            <td>f</td>
+            <td><?php $_SESSION[?></td>
+            <td><?php session_start();?></td>
+            <td><?php session_start();?></td>
+            <td><?php session_start();?></td>
             <td>Del</td>
         </tr>
     </tbody>
