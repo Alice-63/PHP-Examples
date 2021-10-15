@@ -21,9 +21,9 @@
     <?php foreach ($_SESSION["productList"] as $product)?>
         <tr>
             <td><?php echo $product["product_name"]?></td>
-            <td><?php echo $product["product_name"]?></td>
-            <td><?php echo $product["product_name"]?></td>
-            <td><?php echo $product["product_name"]?></td>
+            <td><?php echo $product["product_count"]?></td>
+            <td><?php echo $product["product_price"]?></td>
+            <td><?php echo $product["product_price"]*$product["product_count"]?></td>
             <td>Del</td>
         </tr>
     </tbody>
