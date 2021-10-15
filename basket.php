@@ -15,7 +15,8 @@
 </head>
 <body>
 
-<?php session_start();?>
+<?php session_start();
+print_r($_SESSION)?>
 <table border="1">
     <thead>
         <th>Product Name</th>
@@ -25,14 +26,16 @@
         <th>[Del]</th>
     </thead>
     <tbody>
-    <?php foreach ($_SESSION["productList"] as $product)?>
+    <?php foreach ($_SESSION["productList"] as $product){?>
         <tr>
             <td><?php echo $product["product_name"]?></td>
             <td><?php echo $product["product_count"]?></td>
             <td><?php echo $product["product_price"]?></td>
             <td><?php echo $product["product_price"]*$product["product_count"]?></td>
             <td><a href="#">Del</a></td>
+            <?php} ?>
         </tr>
+        
     </tbody>
 </table>
     
