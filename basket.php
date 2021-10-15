@@ -9,14 +9,18 @@
         table
         {
             width: 600px;
-            font-size:35px
+            font-size:35px;
+            border-collapse:collapse;
+        }
+        th,td{
+            padding:5px
         }
     </style>
 </head>
 <body>
 
 <?php session_start();
-print_r($_SESSION)?>
+?>
 <table border="1">
     <thead>
         <th>Product Name</th>
@@ -26,7 +30,7 @@ print_r($_SESSION)?>
         <th>[Del]</th>
     </thead>
     <tbody>
-    <?php foreach ($_SESSION["productList"] as $product){?>
+    <?php foreach ($_SESSION["productList"] as $product) {?>
         <tr>
             <td><?php echo $product["product_name"]?></td>
             <td><?php echo $product["product_count"]?></td>
@@ -35,7 +39,7 @@ print_r($_SESSION)?>
             <td><a href="#">Del</a></td>
            
         </tr>
-        <?php} ?>
+        <?php } ?>
     </tbody>
 </table>
     
