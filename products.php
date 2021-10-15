@@ -10,7 +10,7 @@ if($_GET){
         "product_price"=> $_GET["price"]
     );
     
-    $_SESSION["productList"][$_GET["product"]]=$product;
+    $_SESSION["productList"][]=$product;
 };
 
 
