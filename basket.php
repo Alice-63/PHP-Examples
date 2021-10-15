@@ -9,7 +9,7 @@
 <body>
 
 
-<table>
+<table border="1">
     <thead>
         <th>Product Name</th>
         <th>Price</th>
@@ -23,6 +23,7 @@
             <td>s</td>
             <td>d</td>
             <td>f</td>
+            <td>Del</td>
         </tr>
     </tbody>
 </table>
