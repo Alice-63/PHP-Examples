@@ -5,11 +5,14 @@ if($_GET){
     session_start();
 
     $product=array(
-        "product_name"=> $_GET("product"),
-        "product_count"=> $_GET("count"),
-        "product_price"=> $_GET("price")
-    )
-}
+        "product_name"=> $_GET["product"],
+        "product_count"=> $_GET ["count"],
+        "product_price"=> $_GET["price"]
+    );
+    print_r($product);
+    // $_SESSION["productList"][]="";
+};
+
 
 
 
