@@ -4,7 +4,7 @@
 
 
 ?>
-<form action="product.php">
+<form action="products.php">
  <fieldset>
      <h3>Order Form</h3>
      <label for="products">Products List</label>
