@@ -20,10 +20,10 @@
     <tbody>
     <?php foreach ($_SESSION["productList"] as $product)?>
         <tr>
-            <td><?php echo $product[""]?></td>
-            <td><?php?></td>
-            <td><?php session_start();?></td>
-            <td><?php session_start();?></td>
+            <td><?php echo $product["product_name"]?></td>
+            <td><?php echo $product["product_name"]?></td>
+            <td><?php echo $product["product_name"]?></td>
+            <td><?php echo $product["product_name"]?></td>
             <td>Del</td>
         </tr>
     </tbody>
