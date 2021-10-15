@@ -33,9 +33,9 @@ print_r($_SESSION)?>
             <td><?php echo $product["product_price"]?></td>
             <td><?php echo $product["product_price"]*$product["product_count"]?></td>
             <td><a href="#">Del</a></td>
-            <?php} ?>
+           
         </tr>
-        
+        <?php} ?>
     </tbody>
 </table>
     
