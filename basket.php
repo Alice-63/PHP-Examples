@@ -22,7 +22,8 @@
 <?php session_start();
 if($_GET)
 
-    unset($_SESSION["productList"][$_GET["del"]])
+    unset($_SESSION["productList"][$_GET["del"]]);
+    header("Location:basket.php")
 
 
 
@@ -43,7 +44,7 @@ if($_GET)
             <td><?php echo $product["product_count"]?></td>
             <td><?php echo $product["product_price"]?></td>
             <td><?php echo $product["product_price"]*$product["product_count"]?></td>
-            <td><a href="http://localhost/PHP/basket.php?del=laptop">Del</a></td>
+            <td><a href="http://localhost/PHP/basket.php?del=<?php echo $product["product_name"]?>">Del</a></td>
            
         </tr>
         <?php } ?>
