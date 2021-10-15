@@ -1,5 +1,15 @@
 <?php
 
+if($_GET)
+{
+    session_start();
+
+    $product=array(
+        "product_name"=> $_GET("product"),
+        "product_count"=> $_GET("count"),
+        "product_price"=> $_GET("price")
+    )
+}
 
 
 
