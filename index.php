@@ -5,7 +5,10 @@
 
 ?>
 <form action="product.php">
-    <select name="product" id="">
+ <fieldset>
+     <h3>Order Form</h3>
+     <label for="products">Products List</label>
+    <select name="product" id="products">
 
         <option value="bildschrim" name="" id="">Bildschrim</option>
         <option value="laptop" name="" id="">Laptop</option>
@@ -14,5 +17,6 @@
     </select>
     <input type="text" name="price" placeholder="Count" value="1">
     <input type="text" name="count"  placeholder="Price" value="1500">
-    
+    <button type="submit">Add</button>
+ </fieldset>
 </form>
