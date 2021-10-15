@@ -9,7 +9,7 @@
         table
         {
             width: 600px;
-            height: 600px;
+            font-size:35px
         }
     </style>
 </head>
