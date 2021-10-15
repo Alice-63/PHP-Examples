@@ -20,6 +20,13 @@
 <body>
 
 <?php session_start();
+if($_GET)
+
+    unset($_SESSION["productList"][$_GET["del"]])
+
+
+
+
 ?>
 <table border="1">
     <thead>
@@ -36,7 +43,7 @@
             <td><?php echo $product["product_count"]?></td>
             <td><?php echo $product["product_price"]?></td>
             <td><?php echo $product["product_price"]*$product["product_count"]?></td>
-            <td><a href="#">Del</a></td>
+            <td><a href="http://localhost/PHP/basket.php?del=laptop">Del</a></td>
            
         </tr>
         <?php } ?>
