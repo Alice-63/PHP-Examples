@@ -1,7 +1,7 @@
 <?php
 
-if($_GET)
-{
+if($_GET){
+
     session_start();
 
     $product=array(
