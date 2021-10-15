@@ -9,8 +9,8 @@ if($_GET){
         "product_count"=> $_GET ["count"],
         "product_price"=> $_GET["price"]
     );
-    print_r($product);
-    // $_SESSION["productList"][]="";
+    
+    $_SESSION["productList"][$_GET["product"]]=$product;
 };
 
 
