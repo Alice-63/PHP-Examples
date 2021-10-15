@@ -18,10 +18,10 @@
         <th>[Del]</th>
     </thead>
     <tbody>
-    <?php foreach ($_SESSION[productList] as $product)?>
+    <?php foreach ($_SESSION["productList"] as $product)?>
         <tr>
-            <td><?php $_SESSION[?></td>
-            <td><?php session_start();?></td>
+            <td><?php echo $product[""]?></td>
+            <td><?php?></td>
             <td><?php session_start();?></td>
             <td><?php session_start();?></td>
             <td>Del</td>
