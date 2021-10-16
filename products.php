@@ -12,6 +12,7 @@ if($_GET){
     
     $_SESSION["productList"][$_GET["product"]]=$product;
 };
+header("location:basket.php");
 
 
 
