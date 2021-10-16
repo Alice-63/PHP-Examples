@@ -1,3 +1,14 @@
+<style>
+    form
+    {
+        text-align:center;
+        font-size:25px
+    }
+    input, button,option{
+        font-size:25px
+    }
+</style>
+
 <?php
 
 if($_GET){
@@ -11,8 +22,9 @@ if($_GET){
     );
     
     $_SESSION["productList"][$_GET["product"]]=$product;
+    header("location:basket.php");
 };
-header("location:basket.php");
+
 
 
 
@@ -20,14 +32,14 @@ header("location:basket.php");
 ?>
 <form action="products.php">
  <fieldset>
-     <h3>Order Form</h3>
-     <label for="products">Products List</label>
+     <h2>Order Form</h2>
+     <label for="products"><h3>Products List</h3></label><br>
     <select name="product" id="products">
 
-        <option value="bildschrim" name="" id="">Bildschrim</option>
-        <option value="laptop" name="" id="">Laptop</option>
-        <option value="macbook" name="" id="">Macbook</option>
-        <option value="mouse" name="" id="">Mouse</option>
+        <option value="Bildschrim" name="" id="">Bildschrim</option>
+        <option value="Laptop" name="" id="">Laptop</option>
+        <option value="Macbook" name="" id="">Macbook</option>
+        <option value="Mouse" name="" id="">Mouse</option>
     </select>
     <input type="text" name="price" placeholder="Count" value="1">
     <input type="text" name="count"  placeholder="Price" value="1500">
