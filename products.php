@@ -4,8 +4,9 @@
         text-align:center;
         font-size:25px
     }
-    input, button,option{
-        font-size:25px
+    input, button,select{
+        font-size:25px;
+        font-weight:bold
     }
 </style>
 

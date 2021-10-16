@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Shopping Cart</title>
     <style>
+        body
+        {
+            display:flex;
+            justify-content:center;
+            flex-direction:column;
+        }
         table
         {
-            width: 600px;
+            width: 100%;
             font-size:35px;
             border-collapse:collapse;
+            text-align:center;
         }
         th,td{
             padding:5px
         }
+
     </style>
 </head>
 <body>
@@ -31,6 +39,7 @@ include "products.php";
 
 
 ?>
+<hr>
 <table border="1">
     <thead>
         <th>Product Name</th>
