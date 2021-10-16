@@ -41,9 +41,11 @@ if($_GET){
         <option value="Laptop" name="" id="">Laptop</option>
         <option value="Macbook" name="" id="">Macbook</option>
         <option value="Mouse" name="" id="">Mouse</option>
+        <option value="Notebook" name="" id="">Notebook</option>
+        <option value="Keyboard" name="" id="">Keyboard</option>
     </select>
-    <input type="text" name="price" placeholder="Count" value="1">
-    <input type="text" name="count"  placeholder="Price" value="1500">
+    <input type="text" name="price" placeholder="Count" >
+    <input type="text" name="count"  placeholder="Price" >
     <button type="submit">Add</button>
  </fieldset>
 </form>
