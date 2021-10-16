@@ -27,6 +27,8 @@ if($_GET){
     
 }
 
+include "products.php";
+
 
 ?>
 <table border="1">
@@ -50,6 +52,6 @@ if($_GET){
         <?php } ?>
     </tbody>
 </table>
-    
+
 </body>
 </html>
