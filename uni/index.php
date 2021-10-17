@@ -8,7 +8,12 @@
     <?php include("../includes/head.php");?>
 </head>
 <body>
-<?php include("../includes/db.php");?>
+<?php include("../includes/db.php");
+
+
+
+
+?>
 <div class="container">
     <h3>Universty List</h3>
     <div class="row">
@@ -20,13 +25,21 @@
                     <th>Prodecurus</th>
                 </thead>
                 <tbody  class="text-center">
+                    <?php
+                    $rows=$db->query("SELECT * FROM tbl_uni", PDO::FETCH_ASSOC);
+
+                    foreach($rows as $row){?>
+                      
+                    
+
                     <tr>
-                        <td>1</td>
-                        <td>Mainz Uni</td>
+                        <td><?php echo $row["id"];?></td>
+                        <td><?php echo $row["titel"];?></td>
                         <td>
                         <a href="#">[Del]</a>
                         <a href="#">[Edit]</a></td>
                     </tr>
+                    <?php } ?>
                  </tbody>
             </table>
             <button class="btn btn-success">Uni Add</button>
