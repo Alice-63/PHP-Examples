@@ -28,14 +28,7 @@
 <body>
 
 <?php session_start();
-if($_GET){
 
-    unset($_SESSION["productList"][$_GET["del"]]);
-    header("location:basket.php");
-    
-}
-
-include "products.php";
 
 
 ?>
