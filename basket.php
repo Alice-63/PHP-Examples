@@ -40,9 +40,7 @@ include "products.php";
 
 ?>
 <hr>
-<table border="1">
-  
-</table>
+
 
 </body>
 </html>
