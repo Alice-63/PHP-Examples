@@ -36,8 +36,8 @@
                         <td><?php echo $row["id"];?></td>
                         <td><?php echo $row["titel"];?></td>
                         <td>
-                        <a href="#">[Del]</a>
-                        <a href="#">[Edit]</a></td>
+                        <a href="delete.php?id=1">[Del]</a>
+                        <a href="update.php?id=2">[Edit]</a></td>
                     </tr>
                     <?php } ?>
                  </tbody>
