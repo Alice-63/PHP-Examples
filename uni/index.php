@@ -10,7 +10,7 @@
 <body>
 
 <div class="container">
-    <h3>Uni List</h3>
+    <h3>Universty List</h3>
     <div class="row">
         <div class="col-md-6">
             <table class="table table-bordered table-striped table-hover">
