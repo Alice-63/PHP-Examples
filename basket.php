@@ -48,18 +48,7 @@ include "products.php";
         <th>Total</th>
         <th>[Del]</th>
     </thead>
-    <tbody>
-    <?php foreach ($_SESSION["productList"] as $product) {?>
-        <tr>
-            <td><?php echo $product["product_name"]?></td>
-            <td><?php echo $product["product_count"]?></td>
-            <td><?php echo $product["product_price"]?></td>
-            <td><?php echo $product["product_price"]*$product["product_count"]?></td>
-            <td><a href="http://localhost/PHP/basket.php?del=<?php echo $product["product_name"]?>">Del</a></td>
-           
-        </tr>
-        <?php } ?>
-    </tbody>
+
 </table>
 
 </body>
