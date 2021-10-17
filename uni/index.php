@@ -9,7 +9,29 @@
 </head>
 <body>
 
-<button class="btn btn-primary">Deneme</button>
+<div class="container">
+    <h3>Uni List</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-bordered">
+                <thead>
+                    <th>RegID</th>
+                    <th>Uni Name</th>
+                    <th>Prodecurus</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Main Uni</td>
+                        <td>
+                        <a href="#">[Del]</a>
+                        <a href="#">[Edit]</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
     
 </body>
 </html>
