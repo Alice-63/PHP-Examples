@@ -8,7 +8,7 @@
     <?php include("../includes/head.php");?>
 </head>
 <body>
-
+<?php include("../includes/db.php");?>
 <div class="container">
     <h3>Universty List</h3>
     <div class="row">
