@@ -15,41 +15,21 @@
         <div class="col-md-6">
             <table class="table table-bordered table-striped table-hover">
                 <thead class="text-center">
-                    <th>RegID</th>
+                    <th style="width:50px">RegID</th>
                     <th>Uni Name</th>
                     <th>Prodecurus</th>
                 </thead>
                 <tbody  class="text-center">
                     <tr>
                         <td>1</td>
-                        <td>Main Uni</td>
+                        <td>Mainz Uni</td>
                         <td>
                         <a href="#">[Del]</a>
                         <a href="#">[Edit]</a></td>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Main Uni</td>
-                        <td>
-                        <a href="#">[Del]</a>
-                        <a href="#">[Edit]</a></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Main Uni</td>
-                        <td>
-                        <a href="#">[Del]</a>
-                        <a href="#">[Edit]</a></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Main Uni</td>
-                        <td>
-                        <a href="#">[Del]</a>
-                        <a href="#">[Edit]</a></td>
-                    </tr>
-                </tbody>
+                 </tbody>
             </table>
+            <button class="btn btn-success">Uni Add</button>
         </div>
     </div>
 </div>
