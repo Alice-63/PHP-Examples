@@ -41,14 +41,7 @@ include "products.php";
 ?>
 <hr>
 <table border="1">
-    <thead>
-        <th>Product Name</th>
-        <th>Price</th>
-        <th>Count</th>
-        <th>Total</th>
-        <th>[Del]</th>
-    </thead>
-
+  
 </table>
 
 </body>
