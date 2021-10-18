@@ -12,8 +12,23 @@
     
         if($_POST){
             $titel=$_POST["titel"];
-            echo $titel;
+            
+
+            include("../includes/db.php");
+
+            $insert=$db->prepare("INSERT INTO  tbl_uni(id,titel) VALUES(null,titel= :titel)");
+            $result=$insert->execute(array("titel" => $titel));
+
+            // if($result)
+            // {
+            //     echo "Successful";
+            // }
+            // else{
+            //     echo "Fail";
+            // };
         };
+
+       
     
     ?>
     <div class="container">
