@@ -42,7 +42,7 @@
                     <?php } ?>
                  </tbody>
             </table>
-            <button class="btn btn-success">Uni Add</button>
+            <a href="insert.php" class="btn btn-success">Uni Add</a>
         </div>
     </div>
 </div>
