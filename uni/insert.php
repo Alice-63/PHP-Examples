@@ -12,13 +12,12 @@
     
         if($_POST){
             $titel=$_POST["titel"];
-            $id=1;
-            $id++;
+            
 
             include("../includes/db.php");
 
-            $insert= $db->prepare("INSERT INTO  tbl_uni SET ('titel= :titel', 'id=:id')");
-            $result= $insert->execute (array("titel" => $titel, "id"=> $id));
+            $insert=$db->prepare("INSERT INTO  tbl_uni SET titel= :titel");
+            $result=$insert->execute(array("titel" => $titel));
 
             // if($result)
             // {
