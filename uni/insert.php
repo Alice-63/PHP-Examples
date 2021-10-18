@@ -18,7 +18,7 @@
             </div>
          
             <button type="submit" class="btn btn-primary mt-3">Save</button>
-            <a href="" class="btn btn-danger">Cancel</a>
+            <a href="" class="btn btn-danger mt-3">Cancel</a>
         </form>
         </div>
     </div>
