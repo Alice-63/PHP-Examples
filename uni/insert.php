@@ -16,8 +16,8 @@
 
             include("../includes/db.php");
 
-            $insert=$db->prepare("INSERT INTO  tbl_uni(id,titel) VALUES(null,titel= :titel)");
-            $result=$insert->execute(array("titel" => $titel));
+            $insert= $db->prepare("INSERT INTO  tbl_uni SET titel= :titel");
+            $result= $insert->execute(array("titel" => "$titel"));
 
             // if($result)
             // {
