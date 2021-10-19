@@ -9,10 +9,13 @@
 </head>
 <body>
     <?php
+    
         if($_POST){
-            $title=$_POST("title");
+            $titel=$_POST["titel"];
             echo $title;
         }
+
+
        
     
     ?>
@@ -22,7 +25,7 @@
         <form method="post">
             <div class="form-group">
                 <label >Universty Name</label>
-                <input type="text" class="form-control mt-3" name="title"  placeholder="Enter Uni Name">
+                <input type="text" class="form-control mt-3" name="titel"  placeholder="Enter Uni Name">
             </div>
          
             <button type="submit" class="btn btn-primary mt-3">Save</button>
