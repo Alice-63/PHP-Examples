@@ -26,6 +26,12 @@
                 </thead>
                 <tbody  class="text-center">
                     <?php
+
+                    include("../uni/insert.php");
+
+                    print_r($result);
+
+
                     $rows=$db->query("SELECT * FROM tbl_uni", PDO::FETCH_ASSOC);
 
                     foreach($rows as $row){?>
@@ -36,7 +42,7 @@
                         
                         <td><?php echo $row["title"];?></td>
                         <td>
-                        <a href="delete.php?id=<?php echo $row["id"]?>">[Del]</a>
+                        <a href="http://localhost/PHP/uni/index.php?del<?php echo $row["title"]?>">[Del]</a>
                         <a href="update.php?id=<?php echo $row["id"]?>">[Edit]</a></td>
                     </tr>
                     <?php } ?>

@@ -32,7 +32,11 @@
         include("../includes/db.php");
 
         $insert=$db->prepare("INSERT INTO tbl_uni SET title= :title");
-       $result=$insert->execute(array("title"=> $title))
+       $result=$insert->execute(array("title"=> $title));
+     echo ($result);
+       if($result){
+           header("Refresh:0; URL=index.php");
+       }
 
     }
 
