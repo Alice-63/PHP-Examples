@@ -9,25 +9,10 @@
 </head>
 <body>
     <?php
-    
         if($_POST){
-            $titel=$_POST["titel"];
-            
-
-            include("../includes/db.php");
-
-            $insert=$db->prepare("INSERT INTO  tbl_uni SET titel= :titel");
-            $result=$insert->execute(array("titel" => $titel));
-
-            // if($result)
-            // {
-            //     echo "Successful";
-            // }
-            // else{
-            //     echo "Fail";
-            // };
-        };
-
+            $title=$_POST("title");
+            echo $title;
+        }
        
     
     ?>
@@ -37,7 +22,7 @@
         <form method="post">
             <div class="form-group">
                 <label >Universty Name</label>
-                <input type="text" class="form-control mt-3" name="titel"  placeholder="Enter Uni Name">
+                <input type="text" class="form-control mt-3" name="title"  placeholder="Enter Uni Name">
             </div>
          
             <button type="submit" class="btn btn-primary mt-3">Save</button>
