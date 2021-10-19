@@ -20,7 +20,7 @@
         <div class="col-md-6">
             <table class="table table-bordered table-striped table-hover">
                 <thead class="text-center">
-                    <th style="width:50px">RegID</th>
+                   
                     <th>Uni Name</th>
                     <th>Prodecurus</th>
                 </thead>
@@ -33,8 +33,8 @@
                     
 
                     <tr>
-                       
-                        <td><?php echo $row["titel"];?></td>
+                        
+                        <td><?php echo $row["title"];?></td>
                         <td>
                         <a href="delete.php?id=<?php echo $row["id"]?>">[Del]</a>
                         <a href="update.php?id=<?php echo $row["id"]?>">[Edit]</a></td>

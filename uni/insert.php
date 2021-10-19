@@ -8,17 +8,7 @@
     <?php include("../includes/head.php");?>
 </head>
 <body>
-    <?php
-    
-        if($_POST){
-            $title=$_POST["title"];
-            echo $title;
-        }
 
-
-       
-    
-    ?>
     <div class="container">
         <h3>Add Uni</h3>
         <div class="col-md-6">
@@ -33,6 +23,22 @@
         </form>
         </div>
     </div>
+    <?php
     
+    if($_POST){
+        $title=$_POST["title"];
+        
+
+        include("../includes/db.php");
+
+        $insert=$db->prepare("INSERT INTO tbl_uni SET title= :title");
+       $result=$insert->execute(array("title"=> $title))
+
+    }
+
+
+   
+
+?>
 </body>
 </html>
