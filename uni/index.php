@@ -33,7 +33,7 @@
                     
 
                     <tr>
-                        <td><?php echo $row["id"]++;?></td>
+                       
                         <td><?php echo $row["titel"];?></td>
                         <td>
                         <a href="delete.php?id=<?php echo $row["id"]?>">[Del]</a>
