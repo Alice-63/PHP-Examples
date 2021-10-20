@@ -13,7 +13,7 @@ foreach ($row as $rows ) {
   
     echo "Personelin Adi: ". $rows["personelAdi"]."<br>";
     echo "Personelin Soyadi: ". $rows["personelSoyadi"]."<br>";
-    echo "<hr>";
+ 
 }
 
 
