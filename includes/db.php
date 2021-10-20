@@ -1,8 +1,11 @@
 <?php
 
 
-$db= new PDO("mysql:host=localhost;dbname=personel;charset=utf8","root","")
-
+try{
+$db= new PDO("mysql:host=localhost;dbname=personel;charset=utf8","root","");
+}catch(PDOException $e){
+    echo $e->getMessage();
+}
 
 
 ?>
