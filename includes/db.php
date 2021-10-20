@@ -9,13 +9,12 @@ $db= new PDO("mysql:host=localhost;dbname=personel;charset=utf8","root","");
 
 $row=$db->query("SELECT * FROM personel", PDO::FETCH_ASSOC);
 
- if( $row->rowCount()>0){
+foreach ($row as $rows ) {
+    print_r($rows);
+    echo "<hr>";
+}
 
-    foreach($rows as $row)
-    {
-        print_r($row);
-        echo "<hr>";
-    }
- };
+
+ 
 
 ?>
