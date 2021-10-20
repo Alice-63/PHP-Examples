@@ -10,7 +10,9 @@ $db= new PDO("mysql:host=localhost;dbname=personel;charset=utf8","root","");
 $row=$db->query("SELECT * FROM personel", PDO::FETCH_ASSOC);
 
 foreach ($row as $rows ) {
-    print_r($rows);
+  
+    echo "Personelin Adi: ". $rows["personelAdi"]."<br>";
+    echo "Personelin Soyadi: ". $rows["personelSoyadi"]."<br>";
     echo "<hr>";
 }
 
