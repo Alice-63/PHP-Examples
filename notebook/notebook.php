@@ -44,7 +44,7 @@ $rows=$db->query("SELECT * FROM tbl_info", PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach($rows as $row){?>
                 <tr>
-                    <td><?php $row["name"]?></td>
+                    <td><?php $row["id"]?></td>
                 </tr>
                 <?php }?>
             </tbody>

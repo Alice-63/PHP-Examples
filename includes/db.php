@@ -79,24 +79,24 @@
 //     echo "Basarisiz";
 // }
 
-try{
-    $db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
-}catch(PDOException $e){
-    echo $e->getMessage();
-}
-$id=11;
-$del=$db->prepare("DELETE FROM personel_list WHERE id=:id");
+// try{
+//     $db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
+// }catch(PDOException $e){
+//     echo $e->getMessage();
+// }
+// $id=11;
+// $del=$db->prepare("DELETE FROM personel_list WHERE id=:id");
 
-$data=array("id"=>$id);
+// $data=array("id"=>$id);
 
-$result=$del->execute($data);
+// $result=$del->execute($data);
 
-if($del){
-    echo "Basarilidir";
-}
-else{
-    echo "Basarisiz...";
-}
+// if($del){
+//     echo "Basarilidir";
+// }
+// else{
+//     echo "Basarisiz...";
+// }
 
 
  
