@@ -44,7 +44,17 @@ $rows=$db->query("SELECT * FROM tbl_info", PDO::FETCH_ASSOC);
             <tbody>
                 <?php foreach($rows as $row){?>
                 <tr>
-                    <td><?php $row["id"]?></td>
+                    <td><?php echo $row["id"]?></td>
+                    <td><?php echo $row["name"]?></td>
+                    <td><?php echo $row["lastname"]?></td>
+                    <td><?php echo $row["web"]?></td>
+                    <td><?php echo $row["email"]?></td>
+                    <td><?php echo $row["phone"]?></td>
+                    <td><?php echo $row["facebook"]?></td>
+                    <td><?php echo $row["twitter"]?></td>
+                    <td><?php echo $row["note"]?></td>
+                    <td><?php echo $row["brithday"]?></td>
+                    <td><?php echo $row["adress"]?></td>
                 </tr>
                 <?php }?>
             </tbody>
