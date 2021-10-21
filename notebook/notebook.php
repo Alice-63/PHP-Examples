@@ -25,9 +25,6 @@
                 <th>Note</th>
                 <th>Birthday</th>
                 <th>Adress</th>
-
-
-
             </thead>
         </table>
     </div>
