@@ -38,13 +38,26 @@
 
 
 try{
-
-$db=new PDO("mysql:host=localhost;dname=person;charset=utf8","root","")
+    $db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
 }catch(PDOException $e){
-   echo $e->getMessage();
+    echo $e->getMessage();
 }
 
+$insert=$db->prepare("INSERT INTO personel_list SET first_name=:first_name,last_name=:last_name");
 
+$data=array(
+    "first_name"=> "Ismail",
+    "last_name"=> "Türüt"
+);
+
+$result=$insert->execute($data);
+
+if($result){
+    echo "Erfolg";
+}
+else{
+    echo "unerfolg!";
+}
  
 
 ?>
