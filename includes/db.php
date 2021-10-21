@@ -18,13 +18,15 @@ $db= new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
 // }
 
 $id=10;
-$rows=$db -> query("SELECT * FROM personel_list where id=10", PDO::FETCH_ASSOC);
+$rows=$db -> query("SELECT * FROM personel_list where id={$id}", PDO::FETCH_ASSOC);
 
 foreach ($rows as $row ) {
+
+    print_r($row);
   
-    echo "Personelin Adi: ". $row["first_name"]."<br>";
-    echo "Personelin Soyadi: ". $row["last_name"]."<br>";
-    echo "<hr>";
+    // echo "Personelin Adi: ". $row["first_name"]."<br>";
+    // echo "Personelin Soyadi: ". $row["last_name"]."<br>";
+    // echo "<hr>";
 }
 
  
