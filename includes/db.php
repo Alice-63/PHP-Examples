@@ -84,10 +84,10 @@ try{
 }catch(PDOException $e){
     echo $e->getMessage();
 }
+$id=11;
+$del=$db->prepare("DELETE FROM personel_list WHERE id=:id");
 
-$del=$db->perpare("DELETE  FROM personel_list where id=:id");
-
-$data=array("id"=>10);
+$data=array("id"=>$id);
 
 $result=$del->execute($data);
 
