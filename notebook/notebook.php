@@ -53,7 +53,7 @@ $rows=$db->query("SELECT * FROM tbl_info", PDO::FETCH_ASSOC);
                     <td><?php echo $row["facebook"]?></td>
                     <td><?php echo $row["twitter"]?></td>
                     <td><?php echo $row["note"]?></td>
-                    <td><?php echo $row["brithday"]?></td>
+                    <td><?php echo $row["birthday"]?></td>
                     <td><?php echo $row["adress"]?></td>
                 </tr>
                 <?php }?>
