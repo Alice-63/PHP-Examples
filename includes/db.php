@@ -18,12 +18,13 @@ $db= new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
 // }
 
 $id=10;
-$rows=$db -> prepare("SELECT * FROM personel_list where id=:id");
+$rows=$db -> prepare("SELECT * FROM personel_list where id>:id");
 $rows-> execute(array("id"=>$id));
 
-$result= $rows->fetchAll(PDO::FETCH::ASSOC);
+$result= $rows->fetchAll(PDO::FETCH_ASSOC);
 
-print_r($rows)
+print_r($result)
+
 
 
 // foreach ($rows as $row ) {
