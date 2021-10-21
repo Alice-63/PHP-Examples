@@ -8,6 +8,28 @@
     <?php include("../includes/head.php")?>
 </head>
 <body>
-    <button class="btn btn-success">Tikla</button>
+    <div class="container">
+       <div class="row">
+            <h3 class="m-2">Person List <a href="" class="btn btn-success">Add</a></h3>
+        </div>
+        <table class="table table-bordered table-striped table-hover">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Lastname</th>
+                <th>Web</th>
+                <th>E-Mail</th>
+                <th>Phone</th>
+                <th>Facebook</th>
+                <th>Twitter</th>
+                <th>Note</th>
+                <th>Birthday</th>
+                <th>Adress</th>
+
+
+
+            </thead>
+        </table>
+    </div>
 </body>
 </html>
