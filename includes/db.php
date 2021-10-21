@@ -59,26 +59,31 @@
 //     echo "unerfolg!";
 // }
 
-try{
-$db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
-}catch(PDOExpection $e){
+// try{
+// $db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
+// }catch(PDOExpection $e){
 
+//     echo $e->getMessage();
+// }
+
+// $update=$db->prepare("UPDATE personel_list SET first_name=:first_name,last_name=:last_name where id=:id");
+
+// $data=array("first_name"=>"Meryem","last_name"=>"Efe", "id"=>30);
+
+// $result=$update->execute($data);
+
+// if($update){
+//     echo "basarilidir";
+// }
+// else{
+//     echo "Basarisiz";
+// }
+
+try{
+    $db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
+}catch(PDOException $e){
     echo $e->getMessage();
 }
-
-$update=$db->prepare("UPDATE personel_list SET first_name=:first_name,last_name=:last_name where id=:id");
-
-$data=array("first_name"=>"Meryem","last_name"=>"Efe", "id"=>30);
-
-$result=$update->execute($data);
-
-if($update){
-    echo "basarilidir";
-}
-else{
-    echo "Basarisiz";
-}
-
 
 
 
