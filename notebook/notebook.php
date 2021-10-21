@@ -8,9 +8,24 @@
     <?php include("../includes/head.php")?>
 </head>
 <body>
+<?php
+try{
+    $db=new PDO("mysql:host=localhost;dbname=notbook;charset=utf8","root","");
+}catch(PDOExpection $e){
+    echo $e->getMessage();
+};
+
+$rows=$db->query("SELECT * FROM tbl_info", PDO::FETCH_ASSOC);
+
+?>
+
+
+
+
+
     <div class="container">
        <div class="row">
-            <h3 class="m-2">Person List <a href="" class="btn btn-success">Add</a></h3>
+            <h3 class="m-2">Person List <a href="" class="btn btn-primary">Add</a></h3>
         </div>
         <table class="table table-bordered table-striped table-hover">
             <thead>
@@ -26,6 +41,13 @@
                 <th>Birthday</th>
                 <th>Adress</th>
             </thead>
+            <tbody>
+                <?php foreach($rows as $row){?>
+                <tr>
+                    <td><?php $row["name"]?></td>
+                </tr>
+                <?php }?>
+            </tbody>
         </table>
     </div>
 </body>
