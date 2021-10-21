@@ -37,27 +37,51 @@
 // }
 
 
+// try{
+//     $db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
+// }catch(PDOException $e){
+//     echo $e->getMessage();
+// }
+
+// $insert=$db->prepare("INSERT INTO personel_list SET first_name=:first_name,last_name=:last_name");
+
+// $data=array(
+//     "first_name"=> "Ismail",
+//     "last_name"=> "Türüt"
+// );
+
+// $result=$insert->execute($data);
+
+// if($result){
+//     echo "Erfolg";
+// }
+// else{
+//     echo "unerfolg!";
+// }
+
 try{
-    $db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
-}catch(PDOException $e){
+$db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
+}catch(PDOExpection $e){
+
     echo $e->getMessage();
 }
 
-$insert=$db->prepare("INSERT INTO personel_list SET first_name=:first_name,last_name=:last_name");
+$update=$db->prepare("UPDATE personel_list SET first_name=:first_name,last_name=:last_name where id 10 between 20");
 
-$data=array(
-    "first_name"=> "Ismail",
-    "last_name"=> "Türüt"
-);
+$data=array("first_name"=>"Gül","last_name"=>"Efe");
 
-$result=$insert->execute($data);
+$result=$update->execute($data);
 
-if($result){
-    echo "Erfolg";
+if($update){
+    echo "basarilidir";
 }
 else{
-    echo "unerfolg!";
+    echo "Basarisiz";
 }
+
+
+
+
  
 
 ?>
