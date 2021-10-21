@@ -85,6 +85,18 @@ try{
     echo $e->getMessage();
 }
 
+$del=$db->perpare("DELETE  FROM personel_list where id=:id");
+
+$data=array("id"=>10);
+
+$result=$del->execute($data);
+
+if($del){
+    echo "Basarilidir";
+}
+else{
+    echo "Basarisiz...";
+}
 
 
  
