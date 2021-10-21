@@ -21,14 +21,19 @@ $id=10;
 $rows=$db -> prepare("SELECT * FROM personel_list where id=:id");
 $rows-> execute(array("id"=>$id));
 
-foreach ($rows as $row ) {
+$result= $rows->fetchAll(PDO::FETCH::ASSOC);
 
-    print_r($row);
+print_r($rows)
+
+
+// foreach ($rows as $row ) {
+
+//     print_r($row);
   
-    // echo "Personelin Adi: ". $row["first_name"]."<br>";
-    // echo "Personelin Soyadi: ". $row["last_name"]."<br>";
-    // echo "<hr>";
-}
+//     // echo "Personelin Adi: ". $row["first_name"]."<br>";
+//     // echo "Personelin Soyadi: ". $row["last_name"]."<br>";
+//     // echo "<hr>";
+// }
 
  
 
