@@ -13,6 +13,7 @@ foreach ($row as $rows ) {
   
     echo "Personelin Adi: ". $rows["first_name"]."<br>";
     echo "Personelin Soyadi: ". $rows["last_name"]."<br>";
+    echo "<hr>";
  
 }
 
