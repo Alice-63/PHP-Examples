@@ -1,11 +1,11 @@
 <?php
 
 
-try{
-$db= new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
-}catch(PDOException $e){
-    echo $e->getMessage();
-};
+// try{
+// $db= new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
+// }catch(PDOException $e){
+//     echo $e->getMessage();
+// };
 
 // $row=$db->query("SELECT * FROM personel_list", PDO::FETCH_ASSOC);
 
@@ -17,13 +17,13 @@ $db= new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
  
 // }
 
-$id=10;
-$rows=$db -> prepare("SELECT * FROM personel_list where id>:id");
-$rows-> execute(array("id"=>$id));
+// $id=10;
+// $rows=$db -> prepare("SELECT * FROM personel_list where id>:id");
+// $rows-> execute(array("id"=>$id));
 
-$result= $rows->fetchAll(PDO::FETCH_ASSOC);
+// $result= $rows->fetchAll(PDO::FETCH_ASSOC);
 
-print_r($result)
+// print_r($result)
 
 
 
@@ -35,6 +35,15 @@ print_r($result)
 //     // echo "Personelin Soyadi: ". $row["last_name"]."<br>";
 //     // echo "<hr>";
 // }
+
+
+try{
+
+$db=new PDO("mysql:host=localhost;dname=person;charset=utf8","root","")
+}catch(PDOException $e){
+   echo $e->getMessage();
+}
+
 
  
 
