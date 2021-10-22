@@ -14,7 +14,7 @@
         </div>
         <div class="row">
             <div class="col-md-6">
-            <form action="">
+            <form action="save.php" method="get">
             <div class="form-group">
                 <label for="">Name</label>
                 <input type="text" class="form-control" name="name" placeholder="Name">
