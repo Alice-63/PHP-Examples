@@ -18,11 +18,37 @@ $adress=$_GET["adress"];
 
 
 try{
-$db=new PDO("mysql:host=localhosst;dbname=notbook;charset=utf8","root","");}
+$db=new PDO("mysql:host=localhost;dbname=notbook;charset=utf8","root","");}
 catch(PDOException $e){
     echo $e->getMessage();
 };
 
+$data=array(
+"name"=>$name,
+"lastname"=>$lastname,
+"web" =>$web,
+"facebook" =>$facebook,
+"email" =>$email,
+"phone" =>$phone,
+"twitter" =>$twitter,
+"birthday" =>$birthday,
+"note" =>$note,
+"adress" =>$adress,
+   
+);
+
+$insert=$db->prepare("INSERT INTO tbl_info SET
+name=:name,
+lastname=:lastname,
+web=:web,
+facebook=:facebook,
+email=:email,
+phone=:phone,
+twitter=
+
+
+
+")
 
 }
 
