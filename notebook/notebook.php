@@ -25,7 +25,7 @@ $rows=$db->query("SELECT * FROM tbl_info", PDO::FETCH_ASSOC);
 
     <div class="container">
        <div class="row">
-            <h3 class="m-2">Person List <a href="" class="btn btn-primary">Add</a></h3>
+            <h3 class="m-2">Person List <a href="addrecord.php" class="btn btn-primary">Add</a></h3>
         </div>
         <table class="table table-bordered table-striped table-hover">
             <thead>

@@ -44,11 +44,19 @@ web=:web,
 facebook=:facebook,
 email=:email,
 phone=:phone,
-twitter=
+twitter=:twitter,
+birthday=:birthday,
+note=:note,
+adress=:adress");
 
+$result=$insert->execute($data);
 
-
-")
+if ($result){
+    echo "Basarili!!";
+}
+else{
+    echo "Basarisiz!!";
+}
 
 }
 
