@@ -6,15 +6,15 @@
 if($_GET){
 
 $name=$_GET["name"];
-// $lastname=$_GET["lastname"];
-// $web=$_GET["web"];
-// $email=$_GET["email"];
-// $phone=$_GET["phone"];
-// $facebook=$_GET["facebook"];
-// $twitter=$_GET["twitter"];
-// $birthday=$_GET["birthday"];
-// $note=$_GET["note"];
-// $adress=$_GET["adress"];
+$lastname=$_GET["lastname"];
+$web=$_GET["web"];
+$email=$_GET["email"];
+$phone=$_GET["phone"];
+$facebook=$_GET["facebook"];
+$twitter=$_GET["twitter"];
+$birthday=$_GET["birthday"];
+$note=$_GET["note"];
+$adress=$_GET["adress"];
 
 
 try{
@@ -25,29 +25,29 @@ catch(PDOException $e){
 
 $data=array(
 "name"=>$name,
-// "lastname"=>$lastname,
-// "web" =>$web,
-// "facebook" =>$facebook,
-// "email" =>$email,
-// "phone" =>$phone,
-// "twitter" =>$twitter,
-// "birthday" =>$birthday,
-// "note" =>$note,
-// "adress" =>$adress,
+"lastname"=>$lastname,
+"web" =>$web,
+"facebook" =>$facebook,
+"email" =>$email,
+"phone" =>$phone,
+"twitter" =>$twitter,
+"birthday" =>$birthday,
+"note" =>$note,
+"adress" =>$adress,
    
 );
 
-$insert=$db->prepare("INSERT INTO animals SET
+$insert=$db->prepare("INSERT INTO tbl_info SET
 name=:name,
--- lastname=:lastname,
--- web=:web,
--- facebook=:facebook,
--- email=:email,
--- phone=:phone,
--- twitter=:twitter,
--- birthday=:birthday,
--- note=:note,
--- adress=:adress");
+lastname=:lastname,
+web=:web,
+facebook=:facebook,
+email=:email,
+phone=:phone,
+twitter=:twitter,
+birthday=:birthday,
+note=:note,
+adress=:adress");
 
 $result=$insert->execute($data);
 
@@ -55,7 +55,7 @@ if ($result){
     echo "Basarili!!";
 }
 else{
-    echo "Basarisiz!!";
+    echo "Basarisiz!!"
 }
 
 }
