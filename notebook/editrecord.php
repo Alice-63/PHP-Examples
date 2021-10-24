@@ -14,6 +14,13 @@
         </div>
         <div class="row">
             <div class="col-md-6">
+                <?php
+                include("../includes/db.php");
+                $id=$_GET["id"];
+                $db->prepare("SELECT * FROM tbl_info WHERE id=:id");
+                $select->bindParam(":id",$id,PDO::PARAM_INT);
+                
+                ?>
             <form action="save.php" method="get">
             <div class="form-group">
                 <label for="">Name</label>

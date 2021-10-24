@@ -9,11 +9,7 @@
 </head>
 <body>
 <?php
-try{
-    $db=new PDO("mysql:host=localhost;dbname=notbook;charset=utf8","root","");
-}catch(PDOExpection $e){
-    echo $e->getMessage();
-};
+include("../includes/db.php");
 
 $rows=$db->query("SELECT * FROM tbl_info", PDO::FETCH_ASSOC);
 

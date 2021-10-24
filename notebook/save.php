@@ -17,11 +17,7 @@ $note=$_GET["note"];
 $adress=$_GET["adress"];
 
 
-try{
-$db=new PDO("mysql:host=localhost;dbname=notbook;charset=utf8","root","");}
-catch(PDOException $e){
-    echo $e->getMessage();
-};
+include("../includes/db.php");
 
 $data=array(
 "name"=>$name,
