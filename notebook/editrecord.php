@@ -56,7 +56,7 @@
                 <label for="">Adress</label>
                 <textarea rows="3"  type="text" class="form-control" name="adress" placeholder="Adress"></textarea>
             </div>
-            <button class="btn btn-primary mt-3 float-start">Edit</button>
+            <button class="btn btn-primary mt-3 float-start">Update</button>
             <a href="notebook.php" class="btn btn-danger mt-3 float-end">Cancel</a>
             </div>
         </div>
