@@ -64,11 +64,11 @@
             </div>
             <div class="form-group">
                 <label for="">Note</label>
-                <textarea rows="3" type="text" class="form-control" name="note" placeholder="Note" value="<?php echo $row["note"]?>"></textarea>
+                <textarea rows="3" type="text" class="form-control" name="note" placeholder="Note" ><?php echo $row["note"];?></textarea>
             </div>
             <div class="form-group">
                 <label for="">Adress</label>
-                <textarea rows="3"  type="text" class="form-control" name="adress" placeholder="Adress" value="<?php echo $row["adress"]?>"></textarea>
+                <textarea rows="3"  type="text" class="form-control" name="adress" placeholder="Adress" ><?php echo $row["adress"];?></textarea>
             </div>
             <button class="btn btn-primary mt-3 float-start">Update</button>
             <a href="notebook.php" class="btn btn-danger mt-3 float-end">Cancel</a>
