@@ -52,10 +52,10 @@ adress=:adress");
 $result=$insert->execute($data);
 
 if ($result){
-    echo "Basarili!!";
+    echo "Successful!! <a href="notebook.php"></a>";
 }
 else{
-    echo "Basarisiz!!";
+    echo "Unsuccessful!!";
 }
 
 }
