@@ -59,7 +59,7 @@
         
             </div>
         </div>
-        <a href="notebook.php">    <button class="btn btn-primary mt-3">Save</button></a>
+        <button class="btn btn-primary mt-3">Save</button>
         <a href="notebook.php" class="btn btn-danger mt-3">Cancel</a>
         </form>
     </div>
