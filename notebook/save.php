@@ -52,7 +52,7 @@ adress=:adress");
 $result=$insert->execute($data);
 
 if ($result){
-    echo "Successful!! <a href="notebook.php"></a>";
+    echo "Successful!! <a href='notebook.php'></a>";
 }
 else{
     echo "Unsuccessful!!";
