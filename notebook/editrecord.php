@@ -28,7 +28,7 @@
 
 
                 ?>
-            <form action="save.php" method="get">
+            <form action="edit.php" method="get">
             <div class="form-group">
                 <label for="">Name</label>
                 <input required type="text" class="form-control" name="name" placeholder="Name" value="<?php echo $row["name"]?>">
