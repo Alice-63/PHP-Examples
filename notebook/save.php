@@ -55,7 +55,7 @@ if ($result){
     echo "Basarili!!";
 }
 else{
-    echo "Basarisiz!!"
+    echo "Basarisiz!!";
 }
 
 }

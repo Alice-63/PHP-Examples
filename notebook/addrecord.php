@@ -21,32 +21,32 @@
             </div>
             <div class="form-group">
                 <label for="">Lastname</label>
-                <input  type="text" class="form-control" name="lastname" placeholder="Lastname">
+                <input required type="text" class="form-control" name="lastname" placeholder="Lastname">
             </div>
             <div class="form-group">
                 <label for="">Web</label>
-                <input  type="text" class="form-control" name="web" placeholder="Web">
+                <input required type="text" class="form-control" name="web" placeholder="Web">
             </div>
             <div class="form-group">
                 <label for="">E-Mail</label>
-                <input  type="text" class="form-control" name="email" placeholder="E-Mail">
+                <input required type="text" class="form-control" name="email" placeholder="E-Mail">
             </div>
             <div class="form-group">
                 <label for="">Phone</label>
-                <input  type="number" class="form-control" name="phone" placeholder="Phone">
+                <input required type="number" class="form-control" name="phone" placeholder="Phone">
             </div>
             <div class="form-group">
                 <label for="">Facebook</label>
-                <input  type="text" class="form-control" name="facebook" placeholder="Facebook">
+                <input required type="text" class="form-control" name="facebook" placeholder="Facebook">
             </div>
             <div class="form-group">
                 <label for="">Twitter</label>
-                <input  type="text" class="form-control" name="twitter" placeholder="Twitter">
+                <input required type="text" class="form-control" name="twitter" placeholder="Twitter">
             </div>
          
             <div class="form-group">
                 <label for="">Birthday</label>
-                <input  type="date" class="form-control" name="birthday" placeholder="Birthday">
+                <input required type="date" class="form-control" name="birthday" placeholder="Birthday">
             </div>
             <div class="form-group">
                 <label for="">Note</label>
