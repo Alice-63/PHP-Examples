@@ -54,7 +54,7 @@ $rows=$db->query("SELECT * FROM tbl_info", PDO::FETCH_ASSOC);
                     <td><?php echo $row["adress"]?></td>
                     <td class="d-flex">
                         <a class="btn btn-primary " href="editrecord.php?id=<?php echo $row["id"]?>">Edit</a>
-                        <a class="btn btn-danger" href="">Del</a>
+                        <a class="btn btn-danger" href="del.php?id=<?php echo $row["id"]?>">Del</a>
                     </td>
                 </tr>
                 <?php }?>

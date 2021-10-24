@@ -15,6 +15,7 @@ $twitter=$_GET["twitter"];
 $birthday=$_GET["birthday"];
 $note=$_GET["note"];
 $adress=$_GET["adress"];
+$id=$_GET["id"];
 
 
 include("../includes/db.php");
@@ -30,10 +31,11 @@ $data=array(
 "birthday" =>$birthday,
 "note" =>$note,
 "adress" =>$adress,
+"id"=>$id
    
 );
 
-$insert=$db->prepare("UPDATE tbl_info SET
+$update=$db->prepare("UPDATE tbl_info SET
 name=:name,
 lastname=:lastname,
 web=:web,
@@ -43,15 +45,17 @@ phone=:phone,
 twitter=:twitter,
 birthday=:birthday,
 note=:note,
-adress=:adress");
+adress=:adress
+WHERE id=:id
+");
 
-$result=$insert->execute($data);
+$result=$update->execute($data);
 
 if ($result){
-    echo "Successful!! <a href='notebook.php'>Click to List</a>";
+    echo "Update is successful!! <a href='notebook.php'>Click to List</a>";
 }
 else{
-    echo "Unsuccessful!! <a href='addrecord.php'>Try again</a>";
+    echo "Update is unsuccessful!! <a href='addrecord.php'>Try again</a>";
 }
 
 }
