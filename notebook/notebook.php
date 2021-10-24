@@ -40,6 +40,7 @@ $rows=$db->query("SELECT * FROM tbl_info", PDO::FETCH_ASSOC);
                 <th>Note</th>
                 <th>Birthday</th>
                 <th>Adress</th>
+                <th>Actions</th>
             </thead>
             <tbody>
                 <?php foreach($rows as $row){?>
@@ -55,8 +56,8 @@ $rows=$db->query("SELECT * FROM tbl_info", PDO::FETCH_ASSOC);
                     <td><?php echo $row["note"]?></td>
                     <td><?php echo $row["birthday"]?></td>
                     <td><?php echo $row["adress"]?></td>
-                    <td>
-                        <a class="btn btn-primary" href="">Edit</a>
+                    <td class="d-flex justify-content-evenly">
+                        <a class="btn btn-primary " href="">Edit</a>
                         <a class="btn btn-danger" href="">Del</a>
                     </td>
                 </tr>
