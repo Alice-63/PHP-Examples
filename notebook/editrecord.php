@@ -17,51 +17,58 @@
                 <?php
                 include("../includes/db.php");
                 $id=$_GET["id"];
-                $db->prepare("SELECT * FROM tbl_info WHERE id=:id");
+                $select=$db->prepare("SELECT * FROM tbl_info WHERE id=:id");
                 $select->bindParam(":id",$id,PDO::PARAM_INT);
-                
+                $result=$select ->execute();
+                $row=$select->fetch(PDO::FETCH_ASSOC);
+
+            
+
+
+
+
                 ?>
             <form action="save.php" method="get">
             <div class="form-group">
                 <label for="">Name</label>
-                <input required type="text" class="form-control" name="name" placeholder="Name">
+                <input required type="text" class="form-control" name="name" placeholder="Name" value="<?php echo $row[""]<?">
             </div>
             <div class="form-group">
                 <label for="">Lastname</label>
-                <input required type="text" class="form-control" name="lastname" placeholder="Lastname">
+                <input required type="text" class="form-control" name="lastname" placeholder="Lastname" value="<?php echo $row[""]<?">
             </div>
             <div class="form-group">
                 <label for="">Web</label>
-                <input required type="text" class="form-control" name="web" placeholder="Web">
+                <input required type="text" class="form-control" name="web" placeholder="Web" value="<?php echo $row[""]<?">
             </div>
             <div class="form-group">
                 <label for="">E-Mail</label>
-                <input required type="text" class="form-control" name="email" placeholder="E-Mail">
+                <input required type="text" class="form-control" name="email" placeholder="E-Mail" value="<?php echo $row[""]<?">
             </div>
             <div class="form-group">
                 <label for="">Phone</label>
-                <input required type="number" class="form-control" name="phone" placeholder="Phone">
+                <input required type="number" class="form-control" name="phone" placeholder="Phone" value="<?php echo $row[""]<?">
             </div>
             <div class="form-group">
                 <label for="">Facebook</label>
-                <input required type="text" class="form-control" name="facebook" placeholder="Facebook">
+                <input required type="text" class="form-control" name="facebook" placeholder="Facebook" value="<?php echo $row[""]<?">
             </div>
             <div class="form-group">
                 <label for="">Twitter</label>
-                <input required type="text" class="form-control" name="twitter" placeholder="Twitter">
+                <input required type="text" class="form-control" name="twitter" placeholder="Twitter" value="<?php echo $row[""]<?">
             </div>
          
             <div class="form-group">
                 <label for="">Birthday</label>
-                <input required type="date" class="form-control" name="birthday" placeholder="Birthday">
+                <input required type="date" class="form-control" name="birthday" placeholder="Birthday" value="<?php echo $row[""]<?">
             </div>
             <div class="form-group">
                 <label for="">Note</label>
-                <textarea rows="3" type="text" class="form-control" name="note" placeholder="Note"></textarea>
+                <textarea rows="3" type="text" class="form-control" name="note" placeholder="Note" value="<?php echo $row[""]<?"></textarea>
             </div>
             <div class="form-group">
                 <label for="">Adress</label>
-                <textarea rows="3"  type="text" class="form-control" name="adress" placeholder="Adress"></textarea>
+                <textarea rows="3"  type="text" class="form-control" name="adress" placeholder="Adress" value="<?php echo $row[""]<?"></textarea>
             </div>
             <button class="btn btn-primary mt-3 float-start">Update</button>
             <a href="notebook.php" class="btn btn-danger mt-3 float-end">Cancel</a>
