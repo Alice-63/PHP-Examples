@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <h3>Add Person</h3>
+            <h3>Edit Person</h3>
         </div>
         <div class="row">
             <div class="col-md-6">
@@ -59,8 +59,8 @@
         
             </div>
         </div>
-        <button class="btn btn-primary mt-3">Save</button>
-        <a href="notebook.php" class="btn btn-danger mt-3">Cancel</a>
+        <button class="btn btn-primary mt-3 float-start">Edit</button>
+        <a href="notebook.php" class="btn btn-danger mt-3 float-none">Cancel</a>
         </form>
     </div>
 </body>
