@@ -52,10 +52,10 @@ adress=:adress");
 $result=$insert->execute($data);
 
 if ($result){
-    echo "Successful!! <a href='notebook.php'></a>";
+    echo "Successful!! <a href='notebook.php'>Click to List</a>";
 }
 else{
-    echo "Unsuccessful!!";
+    echo "Unsuccessful!! <a href='addrecord.php'>Try again</a>";
 }
 
 }
