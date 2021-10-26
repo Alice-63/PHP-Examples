@@ -21,6 +21,9 @@ $myarray=array(
     "age"=>37
 );
 print_r($myarray);
+echo "<br>";
+
+echo $myarray["name"];
 
 die();
 
