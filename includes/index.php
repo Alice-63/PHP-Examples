@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+<?php
+
+echo $_GET["name"];
+
+
+?>
+
 <body>
     <form action="" method="get">
         <input type="text" name="name">
