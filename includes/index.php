@@ -12,8 +12,17 @@
 // echo "Name: ".$_GET["name"]."<br>";
 // echo "Name: ".$_GET["surname"];
 
-$e=false;
-echo ("$e");
+// $e=false;
+// echo ("$e");
+
+$myarray=array(
+    "name"=>"Ali",
+    "surname"=>"Cetin",
+    "age"=>37
+)
+print_r($myarray);
+
+die();
 
 ?>
 
