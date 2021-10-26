@@ -20,6 +20,13 @@ $myarray=array(
     "surname"=>"Cetin",
     "age"=>37
 );
+$new["name"]="Veli";
+$new["surname"]="Candan";
+$new["age"]="38";
+
+
+print_r($new);
+echo "<br>";
 print_r($myarray);
 echo "<br>";
 
