@@ -23,7 +23,7 @@ $myarray=array(
 print_r($myarray);
 echo "<br>";
 
-echo $myarray["name"];
+echo "Name: ". $myarray["name"];
 
 die();
 
