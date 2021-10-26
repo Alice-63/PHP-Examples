@@ -19,7 +19,7 @@ $myarray=array(
     "name"=>"Ali",
     "surname"=>"Cetin",
     "age"=>37
-)
+);
 print_r($myarray);
 
 die();
