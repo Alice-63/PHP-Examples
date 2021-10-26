@@ -9,9 +9,11 @@
 
 <?php
 
-echo "Name: ".$_GET["name"]."<br>";
-echo "Name: ".$_GET["surname"];
+// echo "Name: ".$_GET["name"]."<br>";
+// echo "Name: ".$_GET["surname"];
 
+$e=false;
+echo ("$e");
 
 ?>
 
