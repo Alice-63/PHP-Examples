@@ -24,6 +24,7 @@ $new["name"]="Veli";
 $new["surname"]="Candan";
 $new["age"]="38";
 
+$myarray["adres"]="Germany";
 
 print_r($new);
 echo "<br>";
