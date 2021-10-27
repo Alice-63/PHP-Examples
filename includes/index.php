@@ -34,10 +34,19 @@ $myarray=array(
 // echo "Name: ". $myarray["name"];
 
 // die();
-if($_GET)
-{
-    echo 5*$_GET["sekil"];
 
+$i=0;
+
+while(true)
+{
+    if($i==10)
+    {
+        break;
+    };
+
+    echo "Arbeitet";
+
+    $++;
 }
 
 ?>
