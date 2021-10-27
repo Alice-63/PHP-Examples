@@ -37,7 +37,7 @@ $myarray=array(
 echo count($myarray);
 foreach($myarray as $key => $value)
 {
-    echo count($myarray).$key.": $value"."<br>";
+    echo $key.": $value"."<br>";
 }
 
 
