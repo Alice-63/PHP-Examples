@@ -35,7 +35,9 @@
 
 // die();
 
-
+for ($i=0; $i < 4; $i++) { 
+    echo "Hallo <br><hr>";
+}
 
 
 
