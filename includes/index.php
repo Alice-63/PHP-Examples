@@ -64,7 +64,7 @@ if($_GET){
     <div>
        
         
-        <p><?php echo $recnung["zwei"].$recnung["figure"].$recnung["fünf"]."=".$recnung["zwei"].($recnung["figure"]).$recnung["fünf"]?></p>
+        <p><?php echo $zwei.$figure.$fünf ?></p>
        
         
     </div>
