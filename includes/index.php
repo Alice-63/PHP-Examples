@@ -54,7 +54,7 @@ while(true)
 <body>
     <form action="" method="get">
         <input type="submit" name="name" value="2">
-        <input type="submit" name="sekil" value="5">
+        <input type="submit">
         <button type="submit">Click</button>
     </form>
 </body>
