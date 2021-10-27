@@ -34,10 +34,10 @@ $myarray=array(
 // echo "Name: ". $myarray["name"];
 
 // die();
-
+echo count($myarray);
 foreach($myarray as $key => $value)
 {
-    echo $key.": $value"."<br>";
+    echo count($myarray).$key.": $value"."<br>";
 }
 
 
