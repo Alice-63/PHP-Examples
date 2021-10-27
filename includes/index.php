@@ -35,9 +35,9 @@ $myarray=array(
 
 // die();
 
-foreach($myarray as $key)
+foreach($myarray as $key => $value)
 {
-    echo $key."<br>";
+    echo $key.": $value"."<br>";
 }
 
 
