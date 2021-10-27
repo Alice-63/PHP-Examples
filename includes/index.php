@@ -35,7 +35,16 @@ $myarray=array(
 
 // die();
 
-$i=0;
+if($_GET){
+    $zwei=$_GET["zwei"];
+    $fünf=$_GET["fünf"];
+    $figure=$_GET["figure"];
+
+    $recnung=array(
+
+        
+    )
+}
 
 
 
