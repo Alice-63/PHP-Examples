@@ -15,11 +15,11 @@
 // $e=false;
 // echo ("$e");
 
-// $myarray=array(
-//     "name"=>"Ali",
-//     "surname"=>"Cetin",
-//     "age"=>37
-// );
+$myarray=array(
+    "name"=>"Ali",
+    "surname"=>"Cetin",
+    "age"=>37
+);
 // $new["name"]="Veli";
 // $new["surname"]="Candan";
 // $new["age"]="38";
@@ -36,7 +36,7 @@
 // die();
 
 for ($i=0; $i < 4; $i++) { 
-    echo "Hallo <br><hr>";
+    echo $myarray["$i"];
 }
 
 
