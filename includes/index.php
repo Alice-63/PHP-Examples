@@ -45,7 +45,8 @@ if($_GET){
         "fünf" =>$fünf,
         "figure"=>$figure
 
-    )
+    );
+    print_r($recnung);
 }
 
 
@@ -54,17 +55,13 @@ if($_GET){
 
 <body>
     <form action="" method="get">
-        <input type="submit" name="zwei" value="2">
-        <input type="submit" name="fünf" value="5">
-        <input type="submit" name="figure" value="*">
+        <input type="text" name="zwei" >
+        <input type="text" name="fünf" >
+        <input type="text" name="figure">
         
         <button type="submit">Click</button>
     </form>
     <hr>
-    <div>
-        <?php
-        foreach($recnung as $zahl){?>
-        <p><?php echo $zahl["zwei"].$zahl["figure"].$zahl["fünf"]?></p>
-    </div>
+   
 </body>
 </html>
