@@ -36,16 +36,16 @@ $myarray=array(
 // die();
 if($_GET)
 {
-    echo $_GET["name"];
-    echo $_GET["sekil"];
+    echo 5*$_GET["sekil"];
+
 }
 
 ?>
 
 <body>
     <form action="" method="get">
-        <input type="submit" name="name" value="1">
-        <input type="submit" name="sekil" value="*">
+        <input type="submit" name="name" value="2">
+        <input type="submit" name="sekil" value="5">
         <button type="submit">Click</button>
     </form>
 </body>
