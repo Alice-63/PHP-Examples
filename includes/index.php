@@ -62,12 +62,11 @@ if($_GET){
     </form>
     <hr>
     <div>
-        <?php
-        foreach($zahl as $recnung){?>
-        <p><?php echo $zahl["zwei"]?></p>
-        <p><?php echo $zahl["figure"]?></p>
-        <p><?php echo $zahl["fünf"]?></p>
-        <?php }?>
+       
+        
+        <p><?php echo $recnung["zwei"].$recnung["figure"].$recnung["fünf"]."=".$recnung["zwei"].($recnung["figure"]).$recnung["fünf"]?></p>
+       
+        
     </div>
 </body>
 </html>
