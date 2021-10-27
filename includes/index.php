@@ -37,24 +37,16 @@ $myarray=array(
 
 $i=0;
 
-while(true)
-{
-    if($i==10)
-    {
-        break;
-    };
 
-    echo "Arbeitet...<br>";
-
-    $i++;
-}
 
 ?>
 
 <body>
     <form action="" method="get">
-        <input type="submit" name="name" value="2">
-        <input type="submit">
+        <input type="submit" name="zwei" value="2">
+        <input type="submit" name="fünf" value="5">
+        <input type="submit" name="figure" value="*">
+        
         <button type="submit">Click</button>
     </form>
 </body>
