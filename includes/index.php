@@ -45,9 +45,9 @@ foreach($myarray as $key => $value)
 
 <body>
     <form action="" method="get">
-        <input type="text" name="name">
+        <input type="submit" name="name" value="1">
         <input type="text" name="surname">
-        <button>Click</button>
+        <button type="submit">Click</button>
     </form>
 </body>
 </html>
