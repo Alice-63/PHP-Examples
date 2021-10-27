@@ -64,7 +64,9 @@ if($_GET){
     <div>
         <?php
         foreach($recnung as $zahl){?>
-        <p><?php echo $zahl["zwei"]?><p><?php echo $zahl["figure"]?></p><p><?php echo $zahl["fünf"]?></p>
+        <p><?php echo $recnung["zwei"]?></p>
+        <p><?php echo $recnung["figure"]?></p>
+        <p><?php echo $recnung["fünf"]?></p>
         <?php }?>
     </div>
 </body>
