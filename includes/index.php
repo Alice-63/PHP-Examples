@@ -64,7 +64,7 @@ if($_GET){
     <div>
        
         
-        <p><?php echo $zwei.$figure.$fünf ?></p>
+        <p><?php echo 5*2?></p>
        
         
     </div>
