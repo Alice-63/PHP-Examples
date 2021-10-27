@@ -15,25 +15,29 @@
 // $e=false;
 // echo ("$e");
 
-$myarray=array(
-    "name"=>"Ali",
-    "surname"=>"Cetin",
-    "age"=>37
-);
-$new["name"]="Veli";
-$new["surname"]="Candan";
-$new["age"]="38";
+// $myarray=array(
+//     "name"=>"Ali",
+//     "surname"=>"Cetin",
+//     "age"=>37
+// );
+// $new["name"]="Veli";
+// $new["surname"]="Candan";
+// $new["age"]="38";
 
-$myarray["adres"]="Germany";
+// $myarray["adres"]="Germany";
 
-print_r($new);
-echo "<br>";
-print_r($myarray);
-echo "<br>";
+// print_r($new);
+// echo "<br>";
+// print_r($myarray);
+// echo "<br>";
 
-echo "Name: ". $myarray["name"];
+// echo "Name: ". $myarray["name"];
 
-die();
+// die();
+
+
+
+
 
 ?>
 
