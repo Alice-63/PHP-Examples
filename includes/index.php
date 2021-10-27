@@ -44,9 +44,9 @@ while(true)
         break;
     };
 
-    echo "Arbeitet";
+    echo "Arbeitet...<br>";
 
-    $++;
+    $i++;
 }
 
 ?>
