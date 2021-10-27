@@ -16,9 +16,9 @@
 // echo ("$e");
 
 $myarray=array(
-    "name"=>"Ali",
-    "surname"=>"Cetin",
-    "age"=>37
+   "Ali",
+  "Cetin",
+    37
 );
 // $new["name"]="Veli";
 // $new["surname"]="Candan";
@@ -36,7 +36,7 @@ $myarray=array(
 // die();
 
 for ($i=0; $i < 4; $i++) { 
-    echo $myarray["$i"];
+    echo $myarray[$i]."<br>";
 }
 
 
