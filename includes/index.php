@@ -48,25 +48,15 @@ $myarray=array(
 //     );
 // }
 
+function addieren(){
+    $num1=3;
+    $num2=4;
 
+    echo $num1+$num2;
+};
 
 ?>
 
-<body>
-    <form action="" method="get">
-        <input type="text" name="zwei" >
-        <input type="text" name="fünf" >
-        <input type="text" name="figure" >
-        
-        <button type="submit">Click</button>
-    </form>
-    <hr>
-    <div>
-       
-        
-        <p></p>
-       
-        
-    </div>
+
 </body>
 </html>
