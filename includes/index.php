@@ -35,18 +35,18 @@ $myarray=array(
 
 // die();
 
-if($_GET){
-    $zwei=$_GET["zwei"];
-    $fünf=$_GET["fünf"];
-    $figure=$_GET["figure"];
+// if($_GET){
+//     $zwei=$_GET["zwei"];
+//     $fünf=$_GET["fünf"];
+//     $figure=$_GET["figure"];
 
-    $recnung=array(
-        "zwei"=>$zwei,
-        "fünf" =>$fünf,
-        "figure"=>$figure
+//     $recnung=array(
+//         "zwei"=>$zwei,
+//         "fünf" =>$fünf,
+//         "figure"=>$figure
 
-    );
-}
+//     );
+// }
 
 
 
@@ -64,7 +64,7 @@ if($_GET){
     <div>
        
         
-        <p><?php echo 5*2?></p>
+        <p></p>
        
         
     </div>
