@@ -48,19 +48,18 @@ $myarray=array(
 //     );
 // }
 
-function addieren(){
+function addieren($num1,$num2){
 
-    $num1=3;
-    $num2=4;
+  
     echo $num1+$num2;
     
 
     
 };
 
-addieren();
+addieren(5,4);
 print_r($myarray);
-$_DARKMODE=true;
+
 
 
 ?>
