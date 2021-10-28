@@ -49,11 +49,17 @@ $myarray=array(
 // }
 
 function addieren(){
+
+    echo $num1+$num2;
     $num1=3;
     $num2=4;
 
-    echo $num1+$num2;
+    
 };
+
+echo "hallo";
+print_r($myarray)
+
 
 ?>
 
