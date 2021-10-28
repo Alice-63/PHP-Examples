@@ -57,7 +57,7 @@ function addieren($name,$surname){
     
 };
 
-addieren("Ali","Cetindag");
+
 
 
 
