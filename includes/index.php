@@ -48,17 +48,17 @@ $myarray=array(
 //     );
 // }
 
-function addieren($num1,$num2){
+function addieren($name,$surname){
 
   
-    echo $num1+$num2;
-    
+ 
+    echo $name." ".$surname;
 
     
 };
 
-addieren(5,6);
-print_r($myarray);
+addieren("ALi","Cetindag");
+
 
 
 
