@@ -59,7 +59,8 @@ function addieren(){
 };
 
 addieren();
-print_r($myarray)
+print_r($myarray);
+$_DARKMODE=true;
 
 
 ?>
