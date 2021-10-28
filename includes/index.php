@@ -57,13 +57,13 @@ function addieren($num1,$num2){
     
 };
 
-addieren(array(1),array(2));
+addieren(5,6);
 print_r($myarray);
 
 
 
 ?>
 
-
+<h3><?php addieren(34,23)?></h3>
 </body>
 </html>
