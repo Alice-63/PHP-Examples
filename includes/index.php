@@ -48,14 +48,7 @@ $myarray=array(
 //     );
 // }
 
-function addieren($name,$surname){
 
-  
- 
-    echo $name." ".$surname;
-
-    
-};
 
 
 
