@@ -57,7 +57,7 @@ function addieren($num1,$num2){
     
 };
 
-addieren(5,4);
+addieren(array(1),array(2));
 print_r($myarray);
 
 
