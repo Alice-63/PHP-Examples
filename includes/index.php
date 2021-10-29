@@ -15,6 +15,10 @@
        <option value="-">Subtrahieren -</option>
        <option value="/">Dividieren /</option>
    </select>
+   <input type="text" placeholder="Zahl 1">
+   <input type="text" placeholder="Zahl 2">
+
+   <button>Rechnen</button>
 </form>
 </body>
 </html>
