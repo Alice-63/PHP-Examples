@@ -8,18 +8,26 @@
     <?php include("head.php")?>
 </head>
 
-<form action="ergebnis.php" method="get">
+<div class="container">
+<div class="row">
+    <div class="col-6">
+    <form action="ergebnis.php" method="get">
+    <div class="form-group">
     <h3>Aktion</h3>
-   <select name="aktion" id="">
-       <option value="+">Addieren +</option>
-       <option value="*">Multiplizieren *</option>
-       <option value="-">Subtrahieren -</option>
-       <option value="/">Dividieren /</option>
-   </select>
-   <input name="zahl1" type="text" placeholder="Zahl 1">
-   <input name="zahl2" type="text" placeholder="Zahl 2">
+        <select class="form-control form-control-sm" name="aktion" id="">
+            <option value="+">Addieren +</option>
+            <option value="*">Multiplizieren *</option>
+            <option value="-">Subtrahieren -</option>
+            <option value="/">Dividieren /</option>
+        </select>
+   <input class="form-control form-control-sm" name="zahl1" type="text" placeholder="Zahl 1">
+   <input class="form-control form-control-sm" name="zahl2" type="text" placeholder="Zahl 2">
 
-   <button>Rechnen</button>
+   <button class="btn btn-primary">Rechnen</button>
+    </div>
 </form>
+    </div>
+</div>
+</div>
 </body>
 </html>
