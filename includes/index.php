@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 
-<form action="">
+<form action="ergebnis.php" method="get">
     <h3>Aktion</h3>
    <select name="" id="">
        <option value="+">Addieren +</option>
