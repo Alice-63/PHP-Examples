@@ -11,15 +11,18 @@ if($_GET)
     };
     if($_GET["aktion"]=="*")
     {
-        echo $_GET["zahl1"]*$_GET["zahl2"];
+        $zeil1=($_GET["zahl1"].$_GET["aktion"].$_GET["zahl2"]."<br>");
+        $zeil2=$_GET["zahl1"]*$_GET["zahl2"];
     };
     if($_GET["aktion"]=="-")
     {
-        echo $_GET["zahl1"]-$_GET["zahl2"];
+        $zeil1=($_GET["zahl1"].$_GET["aktion"].$_GET["zahl2"]."<br>");
+        $zeil2=$_GET["zahl1"]-$_GET["zahl2"];
     };
     if($_GET["aktion"]=="/")
     {
-        echo $_GET["zahl1"]/$_GET["zahl2"];
+        $zeil1=($_GET["zahl1"].$_GET["aktion"].$_GET["zahl2"]."<br>");
+        $zeil2=$_GET["zahl1"]/$_GET["zahl2"];
     }
    
 }
@@ -40,12 +43,10 @@ if($_GET)
 <div class="container-fluid ">
 <div class="row justify-content-md-center  ">
     <div class="col-md-2 " >
-        <div class="col-6">
         <h1 class="mt-3 mb-3 text-warning">Ergebnis</h1>
         <h1 ><?php echo $zeil1 ."="?></h1>
         <h1><?php echo $zeil2 ?></h1>
         <a class="btn btn-warning w-100" href="index.php">Zurück</a>
-        </div>
     </div>
 </div>
 </div>
