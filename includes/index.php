@@ -8,13 +8,13 @@
     <?php include("head.php")?>
 </head>
 <body class="bg bg-success">
-<div class="container-fluid">
-<div class="row">
-    <div class="col-md-2">
-    <form action="ergebnis.php" method="get">
-    <div class="form-group">
-    <h3>Aktion</h3>
-        <select required class="form-control form-control-lg" name="aktion" id="">
+<div class="container-fluid ">
+<div class="row justify-content-md-center  ">
+    <div class="col-md-2" >
+    <form  action="ergebnis.php" method="get">
+  
+    <h2>Taschenrechner</h2>
+        <select class="form-control form-control-lg" name="aktion" id="">
               
             <option value="+">Addieren +</option>
             <option value="*">Multiplizieren *</option>
@@ -24,9 +24,9 @@
    <input required class="form-control form-control-lg mt-3" name="zahl1" type="text" placeholder="Zahl 1">
    <input required class="form-control form-control-lg mt-3" name="zahl2" type="text" placeholder="Zahl 2">
 
-   <button type="button" class="btn btn-warning btn-lg btn-block mt-3 w-100">Rechnen</button>
+   <button  class="btn btn-warning btn-lg btn-block mt-3 w-100 form-control">Rechnen</button>
   
-    </div>
+   
 </form>
     </div>
 </div>
