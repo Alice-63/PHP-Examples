@@ -7,6 +7,13 @@
     <title>Document</title>
 </head>
 
-<form action=""></form>
+<form action="">
+   <select name="" id="">
+       <option value="+">Addieren +</option>
+       <option value="*">Multiplizieren *</option>
+       <option value="-">Subtrahieren -</option>
+       <option value="/">Dividieren /</option>
+   </select>
+</form>
 </body>
 </html>
