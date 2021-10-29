@@ -3,9 +3,23 @@
 
 if($_GET)
 {
-    echo $_GET["aktion"]."<br>";
-    echo $_GET["zahl1"]."<br>";
-    echo $_GET["zahl2"]."<br>";
+   
+    if($_GET["aktion"]=="+")
+    {
+        echo $_GET["zahl1"].$_GET["aktion"].$_GET["zahl2"];
+    };
+    if($_GET["aktion"]=="*")
+    {
+        echo $_GET["zahl1"]*$_GET["zahl2"];
+    };
+    if($_GET["aktion"]=="-")
+    {
+        echo $_GET["zahl1"]-$_GET["zahl2"];
+    };
+    if($_GET["aktion"]=="/")
+    {
+        echo $_GET["zahl1"]/$_GET["zahl2"];
+    }
    
 }
 

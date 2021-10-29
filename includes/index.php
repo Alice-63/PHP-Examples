@@ -9,14 +9,14 @@
 
 <form action="ergebnis.php" method="get">
     <h3>Aktion</h3>
-   <select name="" id="">
+   <select name="aktion" id="">
        <option value="+">Addieren +</option>
        <option value="*">Multiplizieren *</option>
        <option value="-">Subtrahieren -</option>
        <option value="/">Dividieren /</option>
    </select>
-   <input type="text" placeholder="Zahl 1">
-   <input type="text" placeholder="Zahl 2">
+   <input name="zahl1" type="text" placeholder="Zahl 1">
+   <input name="zahl2" type="text" placeholder="Zahl 2">
 
    <button>Rechnen</button>
 </form>
