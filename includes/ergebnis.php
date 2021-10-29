@@ -22,7 +22,7 @@ if($_GET)
     if($_GET["aktion"]=="/")
     {
         $zeil1=($_GET["zahl1"].$_GET["aktion"].$_GET["zahl2"]."<br>");
-        $zeil2=$_GET["zahl1"]/$_GET["zahl2"];
+        $zeil2=number_format($_GET["zahl1"]/$_GET["zahl2"]);
     }
    
 }
