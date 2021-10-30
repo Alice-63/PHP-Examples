@@ -1,5 +1,5 @@
 <?php
-echo ucfirst("hallooo leute")
+echo strlen("hallooo leute")
 
 
 
