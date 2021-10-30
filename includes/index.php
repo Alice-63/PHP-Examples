@@ -1,11 +1,15 @@
 <?php
 
 
-$new="Hallo";
-echo $new."<br>";
-$new[3]="x";
+$sayi="500";
 
-echo str_replace("ali","veli","cihan");
+if($sayi===500)
+{
+    echo "O bir Sayi";
+}
+else{
+    echo "o bir sayi degildi";
+}
 
 
 
