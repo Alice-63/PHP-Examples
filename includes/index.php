@@ -1,21 +1,16 @@
 <?php
 
 
-$sayi="500";
+$sayi=0;
 
-if($sayi===500)
-{
-    echo "O bir Sayi";
+
+
+function my (){
+    global $sayi;
+    echo $sayi;
 }
-else{
-    echo "o bir sayi degildi";
-}
 
-
-
-
-
-
+my();
 
 
 
