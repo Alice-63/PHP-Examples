@@ -1,5 +1,11 @@
 <?php
-echo strlen("halloooö leute")
+
+
+$new="Hallo";
+echo $new."<br>";
+$new[3]="x";
+
+echo str_replace("ali","veli","cihan");
 
 
 
