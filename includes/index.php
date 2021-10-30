@@ -1,8 +1,11 @@
 <?php
 
 
-
-echo $_POST["namecook"];
+if(!empty($_POST["namecook"]))
+{
+    setcookie("Giris yapildi");
+    echo "Basarili";
+}
 
 ?>
 
@@ -18,6 +21,7 @@ echo $_POST["namecook"];
    <form action="" method="post">
    <input type="text" name="name">
    <label for=""><input type="checkbox" name="namecook">Tikla</label>
+   <button type="submit">Save</button>
    </form>
 </body>
 </html>
