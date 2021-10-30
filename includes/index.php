@@ -3,8 +3,8 @@
 
 if(!empty($_POST["namecook"]))
 {
-    setcookie("Giris yapildi");
-    echo "Basarili";
+    setcookie("giris yapildi","1");
+   
 }
 
 ?>
