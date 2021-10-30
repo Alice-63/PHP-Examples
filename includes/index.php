@@ -1,5 +1,5 @@
 <?php
-echo "hallooo"
+echo ucfirst("hallooo leute")
 
 
 
