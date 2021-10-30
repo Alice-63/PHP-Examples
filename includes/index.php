@@ -1,5 +1,5 @@
 <?php
-echo strlen("hallooo leute")
+echo strlen("halloooö leute")
 
 
 
