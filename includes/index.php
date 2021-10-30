@@ -1,19 +1,8 @@
 <?php
 
 
-$sayi=0;
 
-
-
-function my (){
-    global $sayi;
-    echo $sayi;
-}
-
-my();
-
-
-
+echo $_POST["namecook"];
 
 ?>
 
@@ -26,6 +15,9 @@ my();
     <title>Document</title>
 </head>
 <body style="background:darkorange;">
-    
+   <form action="" method="post">
+   <input type="text" name="name">
+   <label for=""><input type="checkbox" name="namecook">Tikla</label>
+   </form>
 </body>
 </html>
