@@ -3,7 +3,7 @@
 
 if(($_POST["name"]=="ali"))
 {
-    setcookie("giris yapildi","1");
+    setcookie();
    
 }
 
