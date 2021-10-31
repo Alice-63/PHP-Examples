@@ -1,7 +1,7 @@
 <?php
 
 
-if(($_POST["namecook"]))
+if(($_POST["name"]=="ali"))
 {
     setcookie("giris yapildi","1");
    
