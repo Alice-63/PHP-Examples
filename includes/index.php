@@ -3,7 +3,7 @@
 
 if(($_POST["name"]=="ali"))
 {
-    $name="Ali"
+    $name="Ali";
     setcookie(string $name);
    
 }
