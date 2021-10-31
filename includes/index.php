@@ -1,12 +1,7 @@
 <?php
 
 
-if(($_POST["name"]=="ali"))
-{
-    $name="Ali";
-    setcookie(string $name);
-   
-}
+
 
 ?>
 
