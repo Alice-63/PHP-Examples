@@ -1,8 +1,8 @@
 <?php
 
 
-function all(a,b){
-    echo "a+b";
+function all($a,$b){
+    echo $a+$b;
 }
 
 ?>
