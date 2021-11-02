@@ -1,7 +1,9 @@
 <?php
 
 
-echo "Hallo";
+function all(){
+    echo "Hallo zusammen!"
+}
 
 ?>
 
@@ -19,5 +21,7 @@ echo "Hallo";
    <label for=""><input type="checkbox" name="namecook">Tikla</label>
    <button type="submit">Save</button>
    </form>
+
+   <div><?php all();?></div>
 </body>
 </html>
