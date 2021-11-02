@@ -1,8 +1,8 @@
 <?php
 
 
-function all(){
-    echo "Hallo zusammen!"
+function all(a,b){
+    echo "a+b";
 }
 
 ?>
@@ -22,6 +22,6 @@ function all(){
    <button type="submit">Save</button>
    </form>
 
-   <div><?php all();?></div>
+   <div><?php all(2,3);?></div>
 </body>
 </html>
