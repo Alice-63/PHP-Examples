@@ -6,6 +6,9 @@ empty($_POST["email"] || empty($_POST["pass"]))
 {
     echo "Achtung!"
 }
-
+$name=$_POST["name"];
+$surname=$_POST["surname"];
+$email=$_POST["email"];
+$pass=$_POST["pass"];
 
 ?>
