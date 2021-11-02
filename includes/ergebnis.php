@@ -5,6 +5,9 @@
 // {
 //     echo "Achtung!"
 // }
+$datei=filesize("merhaba.txt");
+echo $datei;
+
 $name=$_POST["name"];
 $surname=$_POST["surname"];
 $email=$_POST["email"];
