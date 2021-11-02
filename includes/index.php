@@ -17,11 +17,12 @@ function all($a){
     <title>Document</title>
 </head>
 <body style="background:darkorange;">
-   <form action="" method="post">
-   <input type="number" name="name">
-   <label for=""><input type="checkbox" name="namecook">Tikla</label>
-   <button type="submit">Save</button>
-   </form>
+  <form action="">
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="surname">
+      <input type="text" placeholder="E-Mail">
+      <input type="text" placeholder="Password">
+  </form>
 
    <div><?php all(6);?></div>
 </body>
