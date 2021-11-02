@@ -20,16 +20,17 @@ function all($a){
     ?>
 </head>
 <body style="background:darkorange;">
-  <div class="row">
+  <div class="row d-flex justify-content-center">
 
-        <h1>Konto Erstellen</h1>
+ 
       <div class="col-md-6 d-flex justify-content-center">
-      <form action="" class="form-group">
-      <input class="form-control" type="text" placeholder="Name">
-      <input class="form-control" type="text" placeholder="Surname">
-      <input class="form-control" type="text" placeholder="E-Mail">
-      <input class="form-control" type="text" placeholder="Password">
-      <input class="form-control" type="submit" value="Konto Erstellen">
+      <form action="ergebnis.php" method="POST" class="form-group">
+      <h1>Konto Erstellen</h1>
+      <input name="name" class="form-control" type="text" placeholder="Name">
+      <input name="surname" class="form-control" type="text" placeholder="Surname">
+      <input name="email" class="form-control" type="text" placeholder="E-Mail">
+      <input name="pass" class="form-control" type="text" placeholder="Password">
+      <input name="" class="form-control" type="submit" value="Konto Erstellen">
   </form>
       </div>
   </div>
