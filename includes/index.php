@@ -2,7 +2,6 @@
 
 
 echo $_POST["name"]."<br>";
-echo $_POST["namecook"];
 
 ?>
 
