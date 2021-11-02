@@ -1,7 +1,7 @@
 <?php
 
 
-echo $_POST["name"]."<br>";
+echo "Hallo";
 
 ?>
 
