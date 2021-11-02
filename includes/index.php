@@ -1,7 +1,8 @@
 <?php
 
 
-function all($a,$b){
+function all($a){
+    $b=$_GET["name"];
     echo $a*$b;
 }
 
@@ -17,11 +18,11 @@ function all($a,$b){
 </head>
 <body style="background:darkorange;">
    <form action="" method="post">
-   <input type="text" name="name">
+   <input type="number" name="name">
    <label for=""><input type="checkbox" name="namecook">Tikla</label>
    <button type="submit">Save</button>
    </form>
 
-   <div><?php all(6,3);?></div>
+   <div><?php all(6);?></div>
 </body>
 </html>
