@@ -2,7 +2,7 @@
 
 
 function all($a,$b){
-    echo $a+$b;
+    echo $a*$b;
 }
 
 ?>
@@ -22,6 +22,6 @@ function all($a,$b){
    <button type="submit">Save</button>
    </form>
 
-   <div><?php all(2,3);?></div>
+   <div><?php all(6,3);?></div>
 </body>
 </html>
