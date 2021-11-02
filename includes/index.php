@@ -19,9 +19,10 @@ function all($a){
 <body style="background:darkorange;">
   <form action="">
       <input type="text" placeholder="Name">
-      <input type="text" placeholder="surname">
+      <input type="text" placeholder="Surname">
       <input type="text" placeholder="E-Mail">
       <input type="text" placeholder="Password">
+      <input type="submit" value="Konto Erstellen">
   </form>
 
    <div><?php all(6);?></div>
