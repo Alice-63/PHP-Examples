@@ -19,7 +19,7 @@ function all($a){
     include("head.php");
     ?>
 </head>
-<body style="background:darkorange;">
+<body style="background:black;">
   <div class="row d-flex justify-content-center">
 
  
