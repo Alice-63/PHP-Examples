@@ -13,5 +13,6 @@ $surname=$_POST["surname"];
 $email=$_POST["email"];
 $pass=$_POST["pass"];
 
-echo "Herzlichen Wilkommen $name <br> $surname"
+echo "Herzlichen Wilkommen $name <br> $surname";
+echo "Ihre E-Mail adresse ist : $email"
 ?>
