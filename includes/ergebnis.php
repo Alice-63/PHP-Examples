@@ -13,6 +13,7 @@ $pass=$_POST["pass"];
 $serverName="localhost";
 $datenbankName="dk_teamprojekt";
 $datenbankUser="root";
+$datenbankPass="";
 
 
 
