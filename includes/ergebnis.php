@@ -21,16 +21,13 @@ $conn=new mysqli($serverName,$datenbankUser,$datenbankPass,$datenbankName);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  else
-  {
-    echo "Connected successfully";
-  }
+
 
 $anfrage="INSERT INTO users (vorname, nachname, email, passwort) VALUES ('".$name."', '".$surname."', '".$email."', '".$pass."')";
 
 if($conn->query($anfrage)==true)
 {
-    echo "Connected successfully";
+    echo "Connected successfully .<a href='index.php'>Geri</a>";
 }
 else{
     echo "Connected unsuccessfull!";
