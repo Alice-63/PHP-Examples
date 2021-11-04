@@ -16,5 +16,7 @@ $datenbankUser="root";
 $datenbankPass="";
 
 
+$conn=new mysqli($serverName,$datenbankUser,$datenbankPass);
+
 
 ?>
