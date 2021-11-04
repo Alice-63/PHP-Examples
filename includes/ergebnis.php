@@ -16,16 +16,19 @@ $datenbankUser="root";
 $datenbankPass="";
 
 
-$conn=new mysqli($serverName,$datenbankUser,$datenbankPass);
+$conn=new mysqli($serverName,$datenbankUser,$datenbankPass,$datenbankName);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  
+  else
+  {
+    echo "Connected successfully";
+  }
 
-$anfrage="INSERT INTO `users` (`id`, `vorname`, `nachname`, `email`, `passwort`) VALUES ('.$name.', '.$surname.', '.$email.', '.$pass.', '')";
+$anfrage="INSERT INTO users (vorname, nachname, email, passwort) VALUES ('".$name."', '".$surname."', '".$email."', '".$pass."')";
 
-if($verbindung->query($anfrage)==true)
+if($conn->query($anfrage)==true)
 {
     echo "Connected successfully";
 }
