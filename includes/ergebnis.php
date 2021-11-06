@@ -22,7 +22,6 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
 
-
 $anfrage="INSERT INTO users (vorname, nachname, email, passwort) VALUES ('".$name."', '".$surname."', '".$email."', '".$pass."')";
 
 if($conn->query($anfrage)==true)
