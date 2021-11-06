@@ -21,10 +21,11 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
 
+  $data=array("name"=>$name,"surname"=>$surname,"email"=>$email,"pass"=>$pass);
 
-$anfrage="INSERT INTO users (vorname=:name, nachname=:surname, email=:email, passwort=:pass)";
-$data=array("name"=>$name,"surname"=>$surname,"email"=>$email,"pass"=>$pass)
 
+
+$anfrage="INSERT INTO users SET (vorname=:name, nachname=:surname, email=:email, passwort=:pass)";
 $result=$anfrage->execute($data);
 
 
