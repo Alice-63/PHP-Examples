@@ -22,7 +22,7 @@ if ($conn->connect_error) {
   }
 
 
-$anfrage="INSERT INTO users (vorname, nachname, email, passwort) VALUES ('".$name."', '".$surname."', '".$email."', '".$pass."')";
+$anfrage="INSERT INTO users (vorname=:name, nachname=:surname, email=:email, passwort=:pass)";
 
 if($conn->query($anfrage)==true)
 {
@@ -32,5 +32,7 @@ else{
     echo "Connected unsuccessfull!";
 }
 
+
+// VALUES ('".$name."', '".$surname."', '".$email."', '".$pass."')
 
 ?>
