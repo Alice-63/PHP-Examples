@@ -16,7 +16,7 @@ $datenbankUser="root";
 $datenbankPass="";
 
 
-$conn=new mysqli($serverName,$datenbankUser,$datenbankPass,$datenbankName);
+$conn=new mysqli($datenbankUser,$serverName,$datenbankPass,$datenbankName);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
