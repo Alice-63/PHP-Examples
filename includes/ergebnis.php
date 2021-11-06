@@ -29,7 +29,7 @@ if($conn->query($anfrage)==true)
     echo "Connected successfully .<a href='index.php'>Neue Konto erstellen</a>";
 }
 else{
-    echo "Connected unsuccessfull!";
+    echo "Connected ";
 }
 
 
