@@ -23,8 +23,15 @@ if ($conn->connect_error) {
 
 
 $anfrage="INSERT INTO users (vorname=:name, nachname=:surname, email=:email, passwort=:pass)";
+$data=array("name"=>$name,"surname"=>$surname,"email"=>$email,"pass"=>$pass)
 
-if($conn->query($anfrage)==true)
+$result=$anfrage->execute($data);
+
+
+
+
+
+if($conn->query($result)==true)
 {
     echo "Connected successfully .<a href='index.php'>Neue Konto erstellen</a>";
 }
