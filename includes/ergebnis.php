@@ -1,8 +1,7 @@
 <?php
 
 
-$datei=filesize("merhaba.txt");
-echo $datei."<br>";
+
 
 $name=$_POST["name"];
 $surname=$_POST["surname"];
@@ -16,7 +15,7 @@ $datenbankUser="root";
 $datenbankPass="";
 
 
-$conn=new mysqli($datenbankUser,$serverName,$datenbankPass,$datenbankName);
+$conn=new mysqli($serverName,$datenbankUser,$datenbankPass,$datenbankName);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
