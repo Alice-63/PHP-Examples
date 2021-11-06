@@ -26,11 +26,11 @@ function all($a){
       <div class="col-md-6 d-flex justify-content-center">
       <form action="ergebnis.php" method="POST" class="form-group">
       <h1>Konto Erstellen</h1>
-      <input name="name" class="form-control" type="text" placeholder="Name">
-      <input name="surname" class="form-control" type="text" placeholder="Surname">
-      <input name="email" class="form-control" type="text" placeholder="E-Mail">
-      <input name="pass" class="form-control" type="text" placeholder="Password">
-      <input name="" class="form-control" type="submit" value="Konto Erstellen">
+      <input required name="name" class="form-control" type="text" placeholder="Name">
+      <input required name="surname" class="form-control" type="text" placeholder="Surname">
+      <input required name="email" class="form-control" type="text" placeholder="E-Mail">
+      <input required name="pass" class="form-control" type="text" placeholder="Password">
+      <input required name="" class="form-control" type="submit" value="Konto Erstellen">
   </form>
       </div>
   </div>

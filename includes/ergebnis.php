@@ -27,7 +27,7 @@ $anfrage="INSERT INTO users (vorname, nachname, email, passwort) VALUES ('".$nam
 
 if($conn->query($anfrage)==true)
 {
-    echo "Connected successfully .<a href='index.php'>Geri</a>";
+    echo "Connected successfully .<a href='index.php'>Neue Konto erstellen</a>";
 }
 else{
     echo "Connected unsuccessfull!";
