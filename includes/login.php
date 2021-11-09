@@ -1,6 +1,6 @@
 <?php
 
-if(!empty($_POST["email"]) || empty($_POST["passwort"]))
+if(empty($_POST["email"]) || empty($_POST["passwort"]))
 {
     exit("Es gibt einenen fehler!");
 };
