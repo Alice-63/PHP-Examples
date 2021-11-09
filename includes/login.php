@@ -20,7 +20,7 @@ $conn=new mysqli($serverName,$datenbankUser,$datenbankPass,$datenbankName);
 
 $anfrage="INSERT INTO benutzer(email,passwort) Values('".$email."','".$passwort."')";
 
-$result=$db->query($anfrage);
+$result=$conn->query($anfrage);
 echo $result;
 
 
