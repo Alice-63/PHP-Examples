@@ -2,23 +2,26 @@
 
 if(empty($_POST["email"]) || empty($_POST["passwort"]))
 {
-    exit("Es gibt einenen fehler!");
+    exit("Es gibt einen fehler!");
 };
 
 $email=$_POST["email"];
 $passwort=$_POST["passwort"];
 
-$server="localhost";
-$benutzer="root";
-$pass="";
-$database="benutzer";
+echo $email." ".$passwort;
 
-$db=new mysqli($server,$benutzer,$pass,$benutzer);
+$serverName="localhost";
+$datenbankName="dk_teamprojekt";
+$datenbankUser="root";
+$datenbankPass="";
 
-$anfrage="INSERT INTO benutzer(email,passwort) Values('".$email."','".$passwort."')";
 
-$result=$db->query($anfrage);
-echo $result;
+$conn=new mysqli($serverName,$datenbankUser,$datenbankPass,$datenbankName);
+
+// $anfrage="INSERT INTO benutzer(email,passwort) Values('".$email."','".$passwort."')";
+
+// $result=$db->query($anfrage);
+// echo $result;
 
 
 
