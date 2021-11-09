@@ -32,5 +32,5 @@ else{
     echo "Connected successful!";
 }
 
-echo "hallo"
+
 ?>
