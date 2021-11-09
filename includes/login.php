@@ -13,7 +13,12 @@ $benutzer="root";
 $pass="";
 $database="benutzer";
 
-$db=
+$db=new mysqli($server,$benutzer,$pass,$benutzer);
+
+$anfrage="INSERT INTO benutzer(email,passwort) Values('".$email."','".$passwort."')";
+
+$result=$db->query($anfrage);
+echo $result;
 
 
 
