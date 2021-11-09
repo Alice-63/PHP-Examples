@@ -8,10 +8,12 @@ if(!empty($_POST["email"]) || empty($_POST["passwort"]))
 $email=$_POST["email"];
 $passwort=$_POST["passwort"];
 
-$host="localhost";
+$server="localhost";
 $benutzer="root";
 $pass="";
 $database="benutzer";
+
+$db=
 
 
 
