@@ -18,10 +18,10 @@ $datenbankPass="";
 
 $conn=new mysqli($serverName,$datenbankUser,$datenbankPass,$datenbankName);
 
-$anfrage="INSERT INTO benutzer(email,passwort) Values('".$email."','".$passwort."')";
+// $anfrage="INSERT INTO benutzer(email,passwort) Values('".$email."','".$passwort."')";
 
-$result=$conn->query($anfrage);
-echo $result;
+// $result=$conn->query($anfrage);
+// echo $result;
 
 
 
