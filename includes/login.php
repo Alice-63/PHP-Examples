@@ -27,8 +27,8 @@ $ergebnis=$conn->query($anfrage);
 //     echo $row["vorname"]."<br>";
 //     echo $row["nachname"]."<br>";
 // }
-$row=$ergebnis->fetch_assoc();
-while($row)
+
+while($row==$ergebnis->fetch_assoc())
 if($row["email"]==$email)
 {
     echo "Gefunden";
