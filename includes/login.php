@@ -1,9 +1,9 @@
 <?php
 
-if(empty($_POST["email"]) || empty($_POST["passwort"]))
-{
-    exit("Es gibt einen fehler!");
-};
+// if(empty($_POST["email"]) || empty($_POST["passwort"]))
+// {
+//     exit("Es gibt einen fehler!");
+// };
 
 $email=$_POST["email"];
 $passwort=$_POST["passwort"];
@@ -17,6 +17,11 @@ $datenbankPass="";
 
 
 $conn=new mysqli($serverName,$datenbankUser,$datenbankPass,$datenbankName);
+$anfrage="SELECT * FROM benutzer";
+$ergebnis=$conn->query($anfrage);
+$anfrageArray=$ergebnis->fetch_assoc();
+
+print_r($anfrageArray);
 
 // $anfrage="INSERT INTO benutzer(email,passwort) Values('".$email."','".$passwort."')";
 
