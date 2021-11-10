@@ -21,7 +21,7 @@ $anfrage="SELECT * FROM benutzer";
 $ergebnis=$conn->query($anfrage);
 $anfrageArray=$ergebnis->fetch_assoc();
 
-print_r($anfrageArray);
+echo(var_dump($anfrageArray))
 
 // $anfrage="INSERT INTO benutzer(email,passwort) Values('".$email."','".$passwort."')";
 
