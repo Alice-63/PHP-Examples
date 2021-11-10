@@ -17,11 +17,16 @@ $datenbankPass="";
 
 
 $conn=new mysqli($serverName,$datenbankUser,$datenbankPass,$datenbankName);
-$anfrage="SELECT * FROM benutzer";
+$anfrage="SELECT * FROM users";
 $ergebnis=$conn->query($anfrage);
-$anfrageArray=$ergebnis->fetch_assoc();
 
-echo(var_dump($anfrageArray))
+for($i=0;$i< $ergebnis->num_rows;$i++)
+{
+    $row=$ergebnis->fetch_assoc();
+
+    echo $row["vorname"]."<br>";
+    echo $row["nachname"]."<br>";
+}
 
 // $anfrage="INSERT INTO benutzer(email,passwort) Values('".$email."','".$passwort."')";
 
