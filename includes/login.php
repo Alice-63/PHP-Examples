@@ -8,7 +8,7 @@
 $email=$_POST["email"];
 $passwort=$_POST["passwort"];
 
-echo $email." ".$passwort;
+
 
 $serverName="localhost";
 $datenbankName="dk_teamprojekt";
@@ -20,12 +20,21 @@ $conn=new mysqli($serverName,$datenbankUser,$datenbankPass,$datenbankName);
 $anfrage="SELECT * FROM users";
 $ergebnis=$conn->query($anfrage);
 
-for($i=0;$i< $ergebnis->num_rows;$i++)
-{
-    $row=$ergebnis->fetch_assoc();
+// for($i=0;$i< $ergebnis->num_rows;$i++)
+// {
+//     $row=$ergebnis->fetch_assoc();
 
-    echo $row["vorname"]."<br>";
-    echo $row["nachname"]."<br>";
+//     echo $row["vorname"]."<br>";
+//     echo $row["nachname"]."<br>";
+// }
+$row==$ergebnis->fetch_assoc();
+while($row)
+if($row["email"]==$email)
+{
+    echo "Gefunden";
+}
+else{
+    echo "nicht gefunden";
 }
 
 // $anfrage="INSERT INTO benutzer(email,passwort) Values('".$email."','".$passwort."')";
