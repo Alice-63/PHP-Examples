@@ -64,7 +64,7 @@
 ?> -->
 <?php
 
-
+// Verbindung
 $serverName = "localhost";
 $datenbank = "dk_teamprojekt";
 $User = "root";
