@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 
 // if(empty($_POST["email"]) || empty($_POST["passwort"]))
 // {
@@ -61,7 +61,7 @@
 
 
 
-?> -->
+?> 
 <?php
 
 // Verbindung
@@ -73,7 +73,7 @@ $Pass = "";
 $verbindung = new mysqli($serverName, $User, $Pass,$datenbank);
 
 // Kategorien
-$anfrage="SELECT * FROM kategorien where name='elektronik'";
+$anfrage="SELECT * FROM produkte where name='elektronik'";
 $result=$verbindung->query($anfrage);
 $row=$result->fetch_assoc();
 
