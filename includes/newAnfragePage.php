@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action="newAnfrage.php">
     <input name="name" type="text">    
     <input name="surname" type="text">
     <input type="submit" name="" value="Anruffen">

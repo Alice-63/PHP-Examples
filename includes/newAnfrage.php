@@ -1,6 +1,6 @@
 <?php
     echo $_GET["name"]." <br>".$_GET["surname"];
-    echo "<br><a href='newLogin.php'>Click</a>";
+    echo "<br><a href='newAnfragePage.php'>Click</a>";
 
 $name=$_GET["name"];
 $surname=$_GET["surname"];
