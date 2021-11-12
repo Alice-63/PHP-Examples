@@ -17,19 +17,21 @@ $conn=new mysqli($server,$user,$pass,$datenbank);
 $anfrage="SELECT * FROM newtabel WHERE name='$name'";
 
 $result=$conn->query($anfrage);
-$row=$result->fetch_assoc();
-print_r($row);
+
+
 
 while($row=$result->fetch_assoc())
 {
    
-    if($row["name"]==$name)
+    if($row["name"]==$name && $row["surname"]==$surname)
     {
         echo "Wilkommen :".$name;
+        echo "<br> $surname";
     }
     else{
         echo "nicht Gefunden!";
     }
+
    }
 
 
