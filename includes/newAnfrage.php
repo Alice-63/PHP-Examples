@@ -21,14 +21,11 @@ $result=$conn->query($anfrage);
 while($row=$result->fetch_assoc())
 {
    
-    if($row["name"]==$name && $row["surname"]==$surname)
+    if($row["name"]==$name)
     {
         echo "Wilkommen :".$name;
     }
-    else{
-        echo "Fehler!";
-    }
-}
+   }
 
 
 
