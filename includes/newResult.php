@@ -1,7 +1,7 @@
 <?php
 
     echo $_GET["name"]." <br>".$_GET["surname"];
-    echo "<br><a href='newLogin.php'>Click</a>"
+    echo "<br><a href='newLogin.php'>Click</a>";
 
 $name=$_GET["name"];
 $surname=$_GET["surname"];
@@ -13,18 +13,18 @@ $user="root";
 $pass="";
 
 
-$conn=new mysqli($server,$datenbank,$user,$pass);
+$conn=new mysqli($server,$user,$pass,$datenbank);
 
-$anfrage="INSERT INTO newtabel(name,surname) VALUES($name,$surname)";
+$anfrage="INSERT INTO newtabel(name,surname) VALUES('$name','$surname')";
 
 $result=$conn->query($anfrage);
 
 if($result)
 {
-    echo "Succsseful"
+    echo "Succsseful";
 }
 else{
-    echo "error!"
+    echo "error!";
 }
 
 
