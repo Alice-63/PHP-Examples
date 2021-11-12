@@ -64,13 +64,13 @@
 ?> -->
 <?php
 
-// Verbindung
+
 $serverName = "localhost";
 $datenbank = "dk_teamprojekt";
 $User = "root";
 $Pass = "";
 
-$verbindung = new mysqli($serverName, $datenbank, $User, $Pass);
+$verbindung = new mysqli($serverName, $User, $Pass,$datenbank);
 
 // Kategorien
 $anfrage="SELECT * FROM kategorien where name='elektronik'";
