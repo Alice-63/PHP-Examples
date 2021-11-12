@@ -109,7 +109,7 @@ $verbindung->close();
      */
 
 
-     if($row["id"]==1)
+     if($row["id"])
      {
          ?>
          <ul>
