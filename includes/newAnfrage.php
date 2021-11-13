@@ -18,7 +18,8 @@ $anfrage="SELECT * FROM newtabel WHERE name='$name'";
 
 $result=$conn->query($anfrage);
 
-
+$result->fetch_assoc();
+$result->fetch_assoc();
 
 while($row=$result->fetch_assoc())
 {
