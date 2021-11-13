@@ -18,7 +18,7 @@ $anfrage="SELECT * FROM newtabel WHERE name='$name'";
 
 $result=$conn->query($anfrage);
 
-echo var_dump($result->fetch_assoc()["name"]);
+
 
 
 
