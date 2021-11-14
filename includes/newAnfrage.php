@@ -22,19 +22,15 @@ $result=$conn->query($anfrage);
 
 
 
-while($row=$result->fetch_assoc())
+if($result->num_rows==0)
 {
-   
-    if($row["name"]==$name && $row["surname"]==$surname)
-    {
-        echo "Wilkommen :".$name;
-        echo "<br> $surname";
-    }
-    else{
-        echo "nicht Gefunden!";
-    }
+    echo ("Keine Benutzer!")
+}
+else{
+    $account=$result->fetch_assoc();
+    echo $account;
+}
 
-   }
 
 
 
