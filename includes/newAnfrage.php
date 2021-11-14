@@ -24,11 +24,14 @@ $result=$conn->query($anfrage);
 
 if($result->num_rows==0)
 {
-    echo ("Keine Benutzer!")
+    echo ("Keine Benutzer!");
 }
 else{
     $account=$result->fetch_assoc();
-    echo $account;
+    if($account["surname"]==$surname)
+    {
+        
+    }
 }
 
 
