@@ -30,7 +30,11 @@ else{
     $account=$result->fetch_assoc();
     if($account["surname"]==$surname)
     {
-        
+        echo "erfolgreich eingelogt!";
+    }
+    else
+    {
+        echo "Falsch!";
     }
 }
 
