@@ -22,21 +22,21 @@ $result=$conn->query($anfrage);
 
 
 
-if($result->num_rows==0)
-{
-    echo ("Keine Benutzer!");
-}
-else{
-    $account=$result->fetch_assoc();
-    if($account["surname"]==$surname)
-    {
-        echo "erfolgreich eingelogt!";
-    }
-    else
-    {
-        echo "Falsch!";
-    }
-}
+// if($result->num_rows==0)
+// {
+//     echo ("Keine Benutzer!");
+// }
+// else{
+//     $account=$result->fetch_assoc();
+//     if($account["surname"]==$surname)
+//     {
+//         echo "erfolgreich eingelogt!";
+//     }
+//     else
+//     {
+//         echo "Falsch!";
+//     }
+// }
 
 
 
