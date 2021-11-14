@@ -25,10 +25,11 @@ while($row=$result->fetch_assoc())
     {
         if($row["surname"]==$surname)
         {
-            echo "Erfolgreich!"
+            echo "Erfolgreich!";
+            break;
         }
         else{
-            echo "Falsch!"
+            echo "Falsch!";
         }
     }
 }
