@@ -19,6 +19,20 @@ $anfrage="SELECT * FROM newtabel WHERE name='$name'";
 $result=$conn->query($anfrage);
 
 
+while($row=$result->fetch_assoc())
+{
+    if($row["name"]==$name)
+    {
+        if($row["surname"]==$surname)
+        {
+            echo "Erfolgreich!"
+        }
+        else{
+            echo "Falsch!"
+        }
+    }
+}
+
 
 
 
