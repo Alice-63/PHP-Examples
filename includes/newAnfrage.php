@@ -32,6 +32,10 @@ while($row=$result->fetch_assoc())
             echo "Falsch!";
         }
     }
+    
+        echo "Name ist Falsch";
+        break;
+    
 }
 
 
