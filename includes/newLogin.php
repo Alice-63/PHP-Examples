@@ -15,5 +15,14 @@
         <input name="surname" type="text" placheholder="surname">
         <input name="" type="submit" value="Click">
     </form>
+    <?php
+
+        if(isset($_GET["emailFehler"])&& $_GET["emailFehler"]=="1")
+        {
+            echo "<div>Email existiert bereits!</div>";
+        }
+
+    ?>
+
 </body>
 </html>

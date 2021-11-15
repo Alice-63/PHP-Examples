@@ -20,7 +20,8 @@ $result=$conn->query($anfrage);
 
 if($result->num_rows>0)
 {
-    header("Location:newLoginPage.php?emailFehler=1");
+    header("Location:newLogin.php?emailFehler=1");
+    exit();
 };
 
 

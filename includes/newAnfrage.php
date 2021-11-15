@@ -44,6 +44,8 @@ $result=$conn->query($anfrage);
 if($result->num_rows==0)
 {
     header("Location:newAnfragePage.php?emailFalsch=1");
+    exit();
+   
 }
 else{
     $account=$result->fetch_assoc();
