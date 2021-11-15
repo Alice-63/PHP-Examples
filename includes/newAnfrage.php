@@ -43,18 +43,19 @@ $result=$conn->query($anfrage);
 
 if($result->num_rows==0)
 {
-    echo ("Keine Benutzer!");
+    header("Location:newAnfragePage.php?emailFalsch=1");
 }
 else{
     $account=$result->fetch_assoc();
     if($account["surname"]==$surname)
     {
-        setcookie("eingeloggt","1")
+        setcookie("eingeloggt","1");
+        header("Location:/index.php");
         // echo "erfolgreich eingelogt!";
     }
     else
     {
-        echo "Falsch!";
+        header("Location:newAnfragePage.php?pwFalsch=1");
     }
 }
 
