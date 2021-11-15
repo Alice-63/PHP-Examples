@@ -15,13 +15,13 @@
     <input type="submit" name="" value="Anruffen">
     </form>
     <?php
-        if(isset($_GET["pwFalsch"])&& $_GET["pwFalsch"]==1)
+        if(isset($_GET["pwFalsch"])&& $_GET["pwFalsch"]=="1")
         {
-            echo "Pass ist Falsch";
-        };
-        if(isset($_GET["emailFalsch"])&& $_GET["emailFalsch"]==1)
+            echo "Surname ist Falsch";
+        }
+        if(isset($_GET["emailFalsch"])&& $_GET["emailFalsch"]=="1")
         {
-            echo "Pass ist Falsch";
+            echo "Name ist Falsch";
         }
 
     ?>

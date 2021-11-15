@@ -3,6 +3,14 @@
 $eingelogt=false;
 $name="";
 
+if(isset($_COOKIE["eingeloggt"]) && $_COOKIE["eingeloggt"]=="1")
+{
+    $eingelogt=true;
+}
+if(!empty($_COOKIE["name"]))
+{
+    $name=$_COOKIE["name"];
+}
 ?>
 
 <!DOCTYPE html>
