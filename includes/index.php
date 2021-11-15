@@ -29,7 +29,7 @@ $name="";
 }
 else{
     ?>
-    Bitte Registiriren! <a href="newLogin.php">Click</a>
+    Bitte Registiriren! <a href="newAnfragePage.php">Click</a>
 
     <?php
 }?>
