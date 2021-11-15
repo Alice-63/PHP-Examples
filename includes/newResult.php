@@ -18,7 +18,7 @@ $conn=new mysqli($server,$user,$pass,$datenbank);
 $anfrage="SELECT * FROM newtabel WHERE name='$name'";
 $result=$conn->query($anfrage);
 
-if($result2->num_rows>0)
+if($result->num_rows>0)
 {
     exit("<br>Diese Email existiert bereits!");
 };
