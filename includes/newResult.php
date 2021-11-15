@@ -15,8 +15,8 @@ $pass="";
 
 $conn=new mysqli($server,$user,$pass,$datenbank);
 
-$anfrage2="SELECT * FROM newtabel WHERE name='$name'";
-$result2=$conn->query($anfrage2);
+$anfrage="SELECT * FROM newtabel WHERE name='$name'";
+$result=$conn->query($anfrage);
 
 if($result2->num_rows>0)
 {
