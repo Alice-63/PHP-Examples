@@ -15,28 +15,26 @@ $pass="";
 
 $conn=new mysqli($server,$user,$pass,$datenbank);
 
-$anfrage2="SELECT * FROM name='$name'";
+$anfrage2="SELECT * FROM newtabel WHERE name='$name'";
 $result2=$conn->query($anfrage2);
 
-if($result2->num_rows==TRUE)
+if($result2->num_rows>0)
 {
-    exit("Diese Email existiert bereits!");
+    exit("<br>Diese Email existiert bereits!");
+};
+
+
+$anfrage="INSERT INTO newtabel(name,surname) VALUES('$name','$surname')";
+
+$result=$conn->query($anfrage);
+
+if($result)
+{
+    echo "Succsseful";
 }
 else{
-    $anfrage="INSERT INTO newtabel(name,surname) VALUES('$name','$surname')";
-
-    $result=$conn->query($anfrage);
-    
-    if($result)
-    {
-        echo "Succsseful";
-    }
-    else{
-        echo "error!";
-    }
-    
+    echo "error!";
 }
-
 
 
 
