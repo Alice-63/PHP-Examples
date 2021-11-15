@@ -16,11 +16,11 @@ $pass="";
 $conn=new mysqli($server,$user,$pass,$datenbank);
 
 $anfrage2="SELECT * FROM name='$name'";
-$result2=$conn->query($anfrage2)
+$result2=$conn->query($anfrage2);
 
-if($result2->num_rows>0)
+if($result2->num_rows==TRUE)
 {
-    exit("Diese Email existiert bereits!")
+    exit("Diese Email existiert bereits!");
 }
 else{
     $anfrage="INSERT INTO newtabel(name,surname) VALUES('$name','$surname')";
