@@ -21,7 +21,6 @@ $result=$conn->query($anfrage);
 
 while($row=$result->fetch_assoc())
 {
-    echo "<li>". $row["name"]."</li>";
     if($row["name"]==$name)
     {
         if($row["surname"]==$surname)
