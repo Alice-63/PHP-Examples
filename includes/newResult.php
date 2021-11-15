@@ -20,7 +20,7 @@ $result=$conn->query($anfrage);
 
 if($result->num_rows>0)
 {
-    exit("<br>Diese Email existiert bereits!");
+    header("Location:newLoginPage.php?emailFehler=1");
 };
 
 
@@ -30,7 +30,9 @@ $result=$conn->query($anfrage);
 
 if($result)
 {
-    echo "Succsseful";
+    setcookie("eingeloggt","1");
+    setcookie("name", $name);
+    header("Location:index.php");
 }
 else{
     echo "error!";

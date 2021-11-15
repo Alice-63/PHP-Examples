@@ -50,6 +50,7 @@ else{
     if($account["surname"]==$surname)
     {
         setcookie("eingeloggt","1");
+        setcookie("name", $name);
         header("Location:index.php");
         // echo "erfolgreich eingelogt!";
     }
