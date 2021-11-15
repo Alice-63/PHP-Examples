@@ -25,7 +25,7 @@ while($row=$result->fetch_assoc())
     {
         if($row["surname"]==$surname)
         {
-            echo "Erfolgreich!";
+            echo "Herzlicahen Willkomen <br><li> $name $surname</li>";
             break;
         }
         else{
