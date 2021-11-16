@@ -32,7 +32,7 @@ $result=$db->query($sql);
         <?php
         while($row=$result->fetch_assoc())
         {
-            echo "<li>$row['name']</li>";
+            echo "<li><a href='onceProduct.php?id=".$row["id"]."'>".$row["name"]."</a></li>";
         }
         ?>
     </ul>
