@@ -53,10 +53,10 @@ $result=$db->query($sql);
     <p><?= $produkt["description"]?></p>
     <h4>Preis: <?= $produkt["preis"]?> €</h4>
     <?php
-    if($produkt["count"]>0)
+    if($produkt["acount"]>0)
     { ?>
 
-        <form methode="post" action="kaufen.php">
+        <form method="POST" action="kaufen.php">
         <input type="hidden" name="id" value="<?=$id?>">
         <input type="submit" value="Kaufen">
         </form>

@@ -1,10 +1,10 @@
 <?php
 
-if(empty($_POST["id"]))
-{
-    header("Location:index.php");
-    exit();
-}
+// if(empty($_POST["id"]))
+// {
+//     header("Location:index.php");
+//     exit();
+// }
 
 $id=$_POST["id"];
 
@@ -26,10 +26,10 @@ if($result->num_rows==0)
 else{
     $produkt=$result->fetch_assoc();
 
-    if($produkt["count"]>0)
+    if($produkt["acount"]>0)
     {
         // UPDATE
-        $sql="UPDATE handys SET count=".($produkt["count"]-1)." WHERE id=".$id.";";
+        $sql="UPDATE handys SET acount=".($produkt["acount"]-1)." WHERE id=".$id.";";
         if($db->query($sql)===TRUE)
         {
             echo ("Erfolgreich gekauft!");
