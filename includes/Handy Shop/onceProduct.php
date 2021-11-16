@@ -52,9 +52,24 @@ $result=$db->query($sql);
     <h1><?= $produkt["name"]?></h1>
     <p><?= $produkt["description"]?></p>
     <h4>Preis: <?= $produkt["preis"]?> €</h4>
-
-    <button>Kaufen</button>
     <?php
+    if($produkt["count"]>0)
+    { ?>
+
+        <form methode="post" action="kaufen.php">
+        <input type="submit" value="Kaufen">
+        </form>
+        
+    
+    
+    <?php
+    }
+    else{
+        ?>
+        <span>Ausverkauft</span>
+
+        <?php
+    }
     }
 
     ?>
