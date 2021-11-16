@@ -6,7 +6,15 @@ if(empty($_POST["id"]))
     exit();
 }
 
-echo "<h1>".$_POST["id"]."</h1>";
+$id=$_POST["id"];
+
+$server="localhost";
+$user="root";
+$pass="";
+$datebank="dk_teamprojekt";
+
+$db=new mysqli($server,$user,$pass,$datebank);
+
 
 
 
