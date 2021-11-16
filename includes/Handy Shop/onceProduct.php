@@ -57,6 +57,7 @@ $result=$db->query($sql);
     { ?>
 
         <form methode="post" action="kaufen.php">
+        <input type="hidden" name="id" value="<?=$id?>">
         <input type="submit" value="Kaufen">
         </form>
         
