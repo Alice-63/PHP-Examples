@@ -12,10 +12,6 @@ $sql="SELECT * FROM handys";
 
 $result=$db->query($sql);
 
-
-
-
-
 ?>
 
 
