@@ -21,10 +21,15 @@ header, footer
 {
     
     display: flex;
+    padding: 20px 0;
 }
 h4
 {
     margin: 0;
+}
+.breadcrumb
+{
+    margin-top: 15px;
 }
 main
 {
@@ -32,7 +37,7 @@ main
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0,2);
     width: 75%;
     flex-grow: 1;
-    margin-right: 5%;
+   
     padding: 15px 20px;
 
 }
@@ -40,6 +45,8 @@ aside{
     background-color: #fff;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0,2);
     width:25%;
+    margin-left: 5%;
     padding: 15px 20px;
     text-align: center;
+    flex-shrink: 0;
 }
