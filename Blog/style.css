@@ -10,3 +10,9 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
+header, footer
+{
+    background-color: rgb(20, 17, 17);
+    padding: 15px 0 ;
+    color: #fff;
+}
