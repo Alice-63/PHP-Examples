@@ -1,4 +1,5 @@
-<?php
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,4 +15,3 @@
         </div>
     </header>
 <div class="wrapper">
-?>

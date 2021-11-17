@@ -1,4 +1,4 @@
-<?php
+
   <footer>
   <div class="wrapper">
 
@@ -8,4 +8,3 @@
 </body>
 </html>
 
-?>

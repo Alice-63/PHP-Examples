@@ -6,6 +6,6 @@ include("header.php");
     </main>
 <?php
 include("sidebar.php");
-include("footer");
+include("footer.php");
 ?>
 
