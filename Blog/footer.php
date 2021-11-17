@@ -1,7 +1,7 @@
 
   <footer>
   <div class="wrapper">
-
+    Footer
   </div>
 </footer>
   
