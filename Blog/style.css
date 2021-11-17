@@ -20,8 +20,17 @@ header, footer
 .content
 {
     background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0,2);
+    display: flex;
 }
 h3
 {
     margin: 0;
+}
+main
+{
+    width: 75%;
+}
+aside{
+    width:25%;
 }
