@@ -19,8 +19,7 @@ header, footer
 }
 .content
 {
-    background-color: #fff;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0,2);
+    
     display: flex;
 }
 h3
@@ -29,8 +28,15 @@ h3
 }
 main
 {
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0,2);
     width: 75%;
+    flex-grow: 1;
+    margin-right: 5%;
+
 }
 aside{
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0,2);
     width:25%;
 }

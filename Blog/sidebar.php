@@ -1,6 +1,6 @@
 
-  <sidebar>
+  <aside>
   <h3>Wilkommen Bei Uns</h3>
-  </sidebar>
+</aside>
   </div>
 
