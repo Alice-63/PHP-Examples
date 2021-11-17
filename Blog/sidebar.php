@@ -1,0 +1,5 @@
+<?php
+  <sidebar></sidebar>
+  </div>
+
+?>
