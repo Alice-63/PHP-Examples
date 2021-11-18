@@ -10,8 +10,7 @@
     Neue Kategorie erstellen:
     <form action="request.php" method="post">
         
-        <input type="text" placeholder="Name" name="kat_name">
-        <input type="submit" name="new_category" value="Erstellen">
+        
     </form>
 </body>
 </html>
