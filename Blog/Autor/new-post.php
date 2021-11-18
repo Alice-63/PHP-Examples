@@ -7,11 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    Neue Kategorie erstellen:
+    Neue Beitrag erstellen:
     <form action="request.php" method="post" style="display:flex;flex-direction:column">
-        <input type="text" placeholder="Name" name="kat_name">
+        
+        <input type="text" placeholder="Name" name="post_titel">
         <textarea name="post_inhalt" placeholder="Inhalt"></textarea>
-        <input type="submit" value="Ertellen">
+        <input type="submit" name="new_post"value="Erstellen">
     </form>
 </body>
 </html>
