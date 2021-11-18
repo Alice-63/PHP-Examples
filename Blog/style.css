@@ -50,3 +50,11 @@ aside{
     text-align: center;
     flex-shrink: 0;
 }
+header .wrapper{
+    display: flex;
+}
+.logo
+{
+    font-size: 2em;
+    font-weight: bold;
+}

@@ -22,7 +22,7 @@
                 <a href="">KONTAKT</a>
 
             </nav>
-    Header
+
         </div>
     </header>
 <div class="wrapper">
