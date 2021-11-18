@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    --primary:#0072ff;
+}
 body{
     margin: 0;
     background-color: rgb(223, 223, 223);
@@ -27,6 +30,10 @@ h1,h2,h3,h4,h5,h6
 {
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: var(--primary);
+}
 .breadcrumb
 {
     margin-top: 15px;
@@ -34,7 +41,7 @@ h1,h2,h3,h4,h5,h6
 main
 {
     background-color: #fff;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0,2);
+    box-shadow: 0 0 20px 0 rgba(0 0 0 /12%);
     width: 75%;
     flex-grow: 1;
    
@@ -52,9 +59,17 @@ aside{
 }
 header .wrapper{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a{
+color:#ccc;
+margin-left: 15px;
 }
 .logo
 {
     font-size: 2em;
     font-weight: bold;
 }
+/* ********************************************* */
