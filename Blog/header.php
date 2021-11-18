@@ -12,6 +12,16 @@
 <body>
     <header>
         <div class="wrapper">
+            <div class="logo">
+                LOGO
+            </div>
+            <nav>
+                <a href="">HOME</a>
+                <a href="">BLOG</a>
+                <a href="">ÜBER MICH</a>
+                <a href="">KONTAKT</a>
+
+            </nav>
     Header
         </div>
     </header>

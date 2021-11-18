@@ -23,7 +23,7 @@ header, footer
     display: flex;
     padding: 20px 0;
 }
-h4
+h1,h2,h3,h4,h5,h6
 {
     margin: 0;
 }
@@ -38,7 +38,7 @@ main
     width: 75%;
     flex-grow: 1;
    
-    padding: 15px 20px;
+    padding: 20px 30px;
 
 }
 aside{
