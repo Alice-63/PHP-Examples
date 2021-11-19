@@ -30,7 +30,7 @@ include("../db.php");
             }?>
 
         </select>
-        <input type="date">
+        <input type="text" name="date">
         <input type="submit" name="new_post"value="Erstellen">
     </form>
 </body>

@@ -7,7 +7,9 @@ if(isset($_POST["new_category"]))
 }
 else if(isset($_POST["new_post"]))
 {
-    $anfrage="INSERT INTO posts (titel,content,category,Autor,datum) VALUES($_POST["post_titel"],$_POST["post_inhalt"],$_POST["post_kategorie"],1,$_POST["date"])"
+    $inhalt=htmlspecialchars($_POST["post_inhalt"]);
+    $date="2021.12.12";
+    $anfrage="INSERT INTO posts (titel,content,category,Autor) VALUES({$_POST["post_titel"]},{$inhalt},{$_POST["post_kategorie"]},1)";
     $result=$db->query($anfrage);
 
     if($result)
@@ -16,7 +18,7 @@ else if(isset($_POST["new_post"]))
     }
     else
     {
-        echo "Beitrag nicht erstelt!";
+        echo $db->error;
     }
    
 }
