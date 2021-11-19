@@ -28,10 +28,16 @@ $row=$result->fetch_assoc();
             $result=$db->query($anfrage);
             $kat_row=$result->fetch_assoc();
 
+            $anfrage="SELECT * FROM autoren WHERE id=".$row["autor"];
+            $result=$db->query($anfrage);
+            $autor_row=$result->fetch_assoc();
+
+
             ?>
             <h1><?= $row["titel"]?></h1>
 
-            <a href="category.php?id=<?= $kat_row["id"]?>"><?= $kat_row["name"] ?></a>
+            <a href="category.php?id=<?= $kat_row["id"]?>"><?= $kat_row["name"] ?></a>/
+            <a href="autor.php?id=<?=$autor_row["id"]?>"><?=$autor_row["name"]?></a>
             <p><?= $row["content"]?></p>
             <hr>
             <span><?= $row["datum"]?></span>
