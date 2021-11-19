@@ -43,7 +43,7 @@ $row=$result->fetch_assoc();
                 while($row=$result->fetch_assoc())
                 {
                     ?>
-                    <li><?= $row["titel"]?></li>
+                    <li><a href="post.php?id=<?=$row["id"]?>"><?= $row["titel"]?></a></li>
                     <?php
                 }
             ?>
