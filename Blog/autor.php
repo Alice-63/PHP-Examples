@@ -13,7 +13,7 @@ if(!empty($_GET["id"]))
       $anfrage="SELECT * FROM posts WHERE id=$autor_id";
       $result=$db->query($anfrage);
       $row=$result->fetch_assoc();
-
+      
     if(!isset($autor_id))
     {
         echo("Autor nicht gefunden.");
@@ -28,8 +28,9 @@ if(!empty($_GET["id"]))
         <ul>
         <?php
          
-
             
+            while($row=$result->fetch_assoc())
+            {   
                 ?>
 
                 
@@ -37,7 +38,7 @@ if(!empty($_GET["id"]))
                 
 
 
-          <?php 
+          <?php }
 
           ?>
           </ul>
