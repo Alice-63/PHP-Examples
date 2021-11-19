@@ -22,7 +22,6 @@
                 <a href="contact.php">KONTAKT</a>
 
             </nav>
-
         </div>
     </header>
 <div class="wrapper">
