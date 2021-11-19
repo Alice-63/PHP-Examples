@@ -21,13 +21,7 @@ include("header.php");
             ...
         </p>
     </section>
-    Kategorien:
-    <ul>
-       <?php
-       
-       
-       
-       ?>
+    
 
     </ul>
     </main>

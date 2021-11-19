@@ -1,5 +1,6 @@
 <?php
 include("header.php");
+include("db.php");
 ?>
     <main>
     <h1>Wilkommen bei Blog</h1>
@@ -7,7 +8,14 @@ include("header.php");
     Kategorien:
     <ul>
        <?php
-       
+       $anfrage="SELECT * FROM category";
+       $result=$db->query($anfrage);
+
+       while($row=$result->fetch_assoc())
+       {
+           echo "<li>". $row["name"]. "</li>";
+       }
+
        
        
        ?>

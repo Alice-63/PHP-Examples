@@ -5,7 +5,7 @@ $user="root";
 $pass="";
 $datenbank="blog";
 
-$db=new myqsli($server,$user,$pass,$datenbank);
+$db=new mysqli($server,$user,$pass,$datenbank);
 
 
 
