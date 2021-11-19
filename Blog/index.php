@@ -10,10 +10,10 @@ include("header.php");
         <h3>Wer bin ich?</h3>
         <p>
             ....
-
-            <a href="uber"></a>
         </p>
 
+        <a href="uber-mich.php">Weiterlesen...</a>
+       
     </section>
     Kategorien:
     <ul>
