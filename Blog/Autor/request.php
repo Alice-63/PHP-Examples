@@ -7,8 +7,18 @@ if(isset($_POST["new_category"]))
 }
 else if(isset($_POST["new_post"]))
 {
-    
-    exit("Beitrag");
+    $anfrage="INSERT INTO posts (titel,content,category,Autor,datum) VALUES($_POST["post_titel"],$_POST["post_inhalt"],$_POST["post_kategorie"],1,$_POST["date"])"
+    $result=$db->query($anfrage);
+
+    if($result)
+    {
+        echo "Beitrag erstelt!";
+    }
+    else
+    {
+        echo "Beitrag nicht erstelt!";
+    }
+   
 }
 
 ?>
