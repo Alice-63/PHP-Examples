@@ -23,5 +23,6 @@ include("db.php");
 <?php
 include("sidebar.php");
 include("footer.php");
+include("close.php");
 ?>
 

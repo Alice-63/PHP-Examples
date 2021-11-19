@@ -16,10 +16,10 @@
                 LOGO
             </div>
             <nav>
-                <a href="">HOME</a>
-                <a href="">BLOG</a>
-                <a href="">ÜBER MICH</a>
-                <a href="">KONTAKT</a>
+                <a href="index.php">HOME</a>
+                <a href="blog.php">BLOG</a>
+                <a href="uber-mich.php">ÜBER MICH</a>
+                <a href="contact.php">KONTAKT</a>
 
             </nav>
 
