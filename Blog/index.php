@@ -9,11 +9,17 @@ include("header.php");
     <section class="intro">
         <h3>Wer bin ich?</h3>
         <p>
-            ....
+            <?=" Dynamische Text von Datenbank"?>
         </p>
 
         <a href="uber-mich.php">Weiterlesen...</a>
        
+    </section>
+    <section class="beratung">
+        <h3>Kostenlose Beratung</h3>
+        <p>
+            ...
+        </p>
     </section>
     Kategorien:
     <ul>
