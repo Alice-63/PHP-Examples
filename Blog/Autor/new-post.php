@@ -15,7 +15,7 @@ include("../db.php");
     <br>
     <form action="request.php" method="post" >
         
-        <input type="text" placeholder="Name" name="post_titel"> <br>
+        <input type="text" placeholder="Titel" name="post_titel"> <br>
         <textarea name="post_inhalt" placeholder="Inhalt"></textarea> <br>
         <select name="post_kategorie" id=""> <br>
             <?php
@@ -30,6 +30,7 @@ include("../db.php");
             }?>
 
         </select>
+        <input type="date">
         <input type="submit" name="new_post"value="Erstellen">
     </form>
 </body>
