@@ -2,7 +2,19 @@
 include("header.php");
 ?>
     <main>
-    <h1>Wilkommen bei Startseite</h1>
+   
+    <section class="hero">
+        <h1>Wilkommen bei Startseite</h1>
+    </section>
+    <section class="intro">
+        <h3>Wer bin ich?</h3>
+        <p>
+            ....
+
+            <a href="uber"></a>
+        </p>
+
+    </section>
     Kategorien:
     <ul>
        <?php
@@ -14,7 +26,7 @@ include("header.php");
     </ul>
     </main>
 <?php
-include("sidebar.php");
+
 include("footer.php");
 ?>
 
