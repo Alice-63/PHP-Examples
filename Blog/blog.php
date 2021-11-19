@@ -12,9 +12,11 @@ include("db.php");
        $result=$db->query($anfrage);
 
        while($row=$result->fetch_assoc())
-       {
-           echo "<li>". $row["name"]. "</li>";
-       }
+       {?>
+          <li><a href="category.php?id=<?=$row["id"]?>"><?=$row["name"]?></a></li>
+       
+       
+       <?php }
 
        
        
