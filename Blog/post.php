@@ -24,7 +24,7 @@ $row=$result->fetch_assoc();
         }
         else{
            
-            $anfrage="SELECT * FROM  category WHERE id"=.$row["category"];
+            $anfrage="SELECT * FROM  category WHERE id=".$row["category"];
             $result=$db->query($anfrage);
             $kat_row=$result->fetch_assoc();
 
