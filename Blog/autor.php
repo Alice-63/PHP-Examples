@@ -6,7 +6,7 @@ if(!empty($_GET["id"]))
     $autor_id=$_GET["id"];
 }
 
-$anfrage="SELECT * FROM posts WHERE Autor=$autor_id";
+$anfrage="SELECT * FROM posts WHERE id=".$autor_id;
       $result=$db->query($anfrage);
       $row=$result->fetch_assoc();
 
@@ -16,13 +16,13 @@ $anfrage="SELECT * FROM posts WHERE Autor=$autor_id";
 
 <ul>
                 <?php
-                while($row=$result->fetch_assoc())
-                {?>
+              
+                ?>
                         
                         <li><a href="post.php?id=<?=$row["id"]?>"><?= $row["titel"]?></a></li>
                         
                 <?php
-            }?>
+            ?>
    
                 
    </ul>
