@@ -1,3 +1,7 @@
+<?php
+
+include("../db.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +18,13 @@
         <input type="text" placeholder="Name" name="post_titel"> <br>
         <textarea name="post_inhalt" placeholder="Inhalt"></textarea> <br>
         <select name="post_kategorie" id=""> <br>
-            <option value="1">Blumen</option>
-            <option value="2">Technik</option>
-            <option value="3">Gesundheit</option>
+            <?php
+            $anfrage="SELECT * FROM  category"
+            $result=$db->query($anfrage);
+            $kat_row=$result->fetch_assoc();
+            
+            
+            ?>
             
 
         </select>
