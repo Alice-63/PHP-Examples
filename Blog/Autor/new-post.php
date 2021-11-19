@@ -8,10 +8,18 @@
 </head>
 <body>
     Neue Beitrag erstellen:
-    <form action="request.php" method="post" style="display:flex;flex-direction:column">
+    <br>
+    <form action="request.php" method="post" >
         
-        <input type="text" placeholder="Name" name="post_titel">
-        <textarea name="post_inhalt" placeholder="Inhalt"></textarea>
+        <input type="text" placeholder="Name" name="post_titel"> <br>
+        <textarea name="post_inhalt" placeholder="Inhalt"></textarea> <br>
+        <select name="post_kategorie" id=""> <br>
+            <option value="1">Blumen</option>
+            <option value="2">Technik</option>
+            <option value="3">Gesundheit</option>
+            
+
+        </select>
         <input type="submit" name="new_post"value="Erstellen">
     </form>
 </body>
