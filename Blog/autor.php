@@ -6,51 +6,27 @@ if(!empty($_GET["id"]))
     $autor_id=$_GET["id"];
 }
 
+$anfrage="SELECT * FROM posts WHERE Autor=$autor_id";
+      $result=$db->query($anfrage);
+      $row=$result->fetch_assoc();
+
 
 ?>
     <main>
-    <?php
-      $anfrage="SELECT * FROM posts WHERE id=$autor_id";
-      $result=$db->query($anfrage);
-      $row=$result->fetch_assoc();
-      
-    if(!isset($autor_id))
-    {
-        echo("Autor nicht gefunden.");
-    }
-    else
-    {
-        if($result->num_rows==0)
-        {
-            echo ("Autor nicht gefunden! ");
-        }
-        else{?>
-        <ul>
-        <?php
-         
-            
-            while($row=$result->fetch_assoc())
-            {   
-                ?>
 
+<ul>
+                <?php
+                while($row=$result->fetch_assoc())
+                {?>
+                        
+                        <li><a href="post.php?id=<?=$row["id"]?>"><?= $row["titel"]?></a></li>
+                        
+                <?php
+            }?>
+   
                 
-                <li><a href="post.php?id=<?=$row["id"]?>"><?= $row["titel"]?></a></li>
-                
+   </ul>
 
-
-          <?php }
-
-          ?>
-          </ul>
-          <?php
-
-
-
-        
-        
-        }
-        }
-        ?>
 
     </main>
 <?php
