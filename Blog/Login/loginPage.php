@@ -10,10 +10,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Konto Erstellen</h1>
     <form action="login.php" method="get">
-        <input name="benutzername" type="text" placheholder="Benutzername">
-        <input name="email" type="text" placheholder="Email">
-        <input name="pass" type="text" placheholder="Passwort">
+        <input name="benutzername" type="text" placeholder="Benutzername">
+        <input name="email" type="text" placeholder="Email">
+        <input name="pass" type="text" placeholder="Passwort">
      
         <input name="" type="submit" value="Click">
     </form>
