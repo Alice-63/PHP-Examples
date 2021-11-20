@@ -27,14 +27,14 @@ if($result->num_rows>0)
 };
 
 
-$anfrage="INSERT INTO benutzer(benutzername,email,passwort) VALUES('$benutzername','$email','$pass')";
+$anfrage="INSERT INTO benutzer(benutzername,passwort,email,gruppe) VALUES('$benutzername','$pass','$email',3)";
 
-$result=$conn->query($anfrage);
 
-if($result)
+
+if($conn->query($anfrage)===true)
 {
-    setcookie("eingeloggt","1");
-    setcookie("name", $name);
+    setcookie("eingeloggt","1",0,"/");
+    setcookie("id", $conn->insert_id,0,"/");
     header("Location:index.php");
 }
 else{
@@ -42,6 +42,6 @@ else{
 }
 
 
-
+include("../close.php")
 
 ?>
