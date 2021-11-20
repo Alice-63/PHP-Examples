@@ -3,9 +3,9 @@
   
     echo "<br><a href='newLogin.php'>Click</a>";
 
-$name=$_GET["benutzername"];
-$surname=$_GET["email"];
-$name=$_GET["pass"];
+$benutzername=$_GET["benutzername"];
+$email=$_GET["email"];
+$pass=$_GET["pass"];
 
 
 
