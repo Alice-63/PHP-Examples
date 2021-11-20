@@ -1,11 +1,10 @@
 <?php
 
   
-    echo "<br><a href='newLogin.php'>Click</a>";
 
 $benutzername=$_GET["benutzername"];
 $email=$_GET["email"];
-$pass=$_GET["pass"];
+$passwort=$_GET["passwort"];
 
 
 
@@ -17,7 +16,7 @@ $pass="";
 
 $conn=new mysqli($server,$user,$pass,$datenbank);
 
-$anfrage="SELECT * FROM benutzer WHERE email='$email' OR benutzername='$benutzername'";
+$anfrage="SELECT * FROM benutzer WHERE email='".$email."' OR benutzername='".$benutzername."'";
 $result=$conn->query($anfrage);
 
 if($result->num_rows>0)
@@ -27,7 +26,7 @@ if($result->num_rows>0)
 };
 
 
-$anfrage="INSERT INTO benutzer(benutzername,passwort,email,gruppe) VALUES('$benutzername','$pass','$email',3)";
+$anfrage="INSERT INTO benutzer(benutzername,passwort,email,gruppe) VALUES('$benutzername','$passwort','$email',3)";
 
 
 

@@ -20,6 +20,7 @@
                 <a href="blog.php">BLOG</a>
                 <a href="uber-mich.php">ÜBER MICH</a>
                 <a href="contact.php">KONTAKT</a>
+                <a href="loginPage.php">LOGIN</a>
 
             </nav>
         </div>
