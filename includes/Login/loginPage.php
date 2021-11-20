@@ -11,8 +11,10 @@
 </head>
 <body>
     <form action="newResult.php" method="get">
-        <input name="name" type="text" placheholder="name">
-        <input name="surname" type="text" placheholder="surname">
+        <input name="benutzername" type="text" placheholder="Benutzername">
+        <input name="email" type="text" placheholder="Email">
+        <input name="pass" type="text" placheholder="Passwort">
+     
         <input name="" type="submit" value="Click">
     </form>
     <?php
