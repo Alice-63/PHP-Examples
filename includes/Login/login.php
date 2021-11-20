@@ -3,8 +3,10 @@
     echo $_GET["name"]." <br>".$_GET["surname"];
     echo "<br><a href='newLogin.php'>Click</a>";
 
-$name=$_GET["name"];
-$surname=$_GET["surname"];
+$name=$_GET["benutzername"];
+$surname=$_GET["email"];
+$name=$_GET["pass"];
+
 
 
 $server="localhost";
