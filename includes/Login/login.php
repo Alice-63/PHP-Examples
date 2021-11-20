@@ -10,24 +10,24 @@ $name=$_GET["pass"];
 
 
 $server="localhost";
-$datenbank="dk_teamprojekt";
+$datenbank="blog";
 $user="root";
 $pass="";
 
 
 $conn=new mysqli($server,$user,$pass,$datenbank);
 
-$anfrage="SELECT * FROM newtabel WHERE name='$name'";
+$anfrage="SELECT * FROM newtabel WHERE email='$email' OR benutzername='$benutzername'";
 $result=$conn->query($anfrage);
 
 if($result->num_rows>0)
 {
-    header("Location:newLogin.php?emailFehler=1");
+    header("Location:loginPage.php?emailFehler=1");
     exit();
 };
 
 
-$anfrage="INSERT INTO newtabel(name,surname) VALUES('$name','$surname')";
+$anfrage="INSERT INTO benutzer(benutzername,email,passwort) VALUES('$benutzername','$email','$pass')";
 
 $result=$conn->query($anfrage);
 
