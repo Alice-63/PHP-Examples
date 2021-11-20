@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="newResult.php" method="get">
+    <form action="login.php" method="get">
         <input name="benutzername" type="text" placheholder="Benutzername">
         <input name="email" type="text" placheholder="Email">
         <input name="pass" type="text" placheholder="Passwort">
