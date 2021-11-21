@@ -17,7 +17,7 @@ include("header.php");
 
         if(isset($_GET["emailFehler"])&& $_GET["emailFehler"]=="1")
         {
-            echo "<div>Email oder  existiert bereits!</div>";
+            echo "<div>Email existiert bereits!</div>";
         }
 
     ?>
