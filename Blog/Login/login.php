@@ -21,7 +21,7 @@ $result=$conn->query($anfrage);
 
 if($result->num_rows>0)
 {
-    header("");
+    header("Location:loginPage.php?emailFehler=1");
     exit();
 };
 
