@@ -58,9 +58,7 @@ aside{
     flex-shrink: 0;
 }
 header .wrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ 
 }
 
 header nav a{
