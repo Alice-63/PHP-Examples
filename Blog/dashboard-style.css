@@ -1,0 +1,7 @@
+*{box-sizing: border-box; font-family: 'Segoe UI';}
+
+body
+{
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+}
