@@ -1,6 +1,6 @@
 
 <?php
-include("header.php");
+
 
 ?>
 
@@ -23,7 +23,6 @@ include("header.php");
     ?>
     </main>
 <?php
-include("sidebar.php");
-include("footer.php");
+
 
 ?>
