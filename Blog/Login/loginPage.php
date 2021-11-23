@@ -1,5 +1,5 @@
 <?php
-include("dashboard-header.php")
+include("../dashboard-header.php")
 ?>
 <main>
     <h1>Konto Erstellen</h1>
