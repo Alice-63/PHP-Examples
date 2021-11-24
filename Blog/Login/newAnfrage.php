@@ -30,13 +30,6 @@ $result=$conn->query($anfrage);
 //         }
 //         else{
 //             echo "Falsch!";
-//         }
-//     }
-    
-//         echo "Name ist Falsch";
-//         break;
-    
-// }
 
 
 
