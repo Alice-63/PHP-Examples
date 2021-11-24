@@ -24,12 +24,6 @@ $result=$conn->query($anfrage);
 //     if($row["name"]==$name)
 //     {
 //         if($row["surname"]==$surname)
-//         {
-//             echo "Herzlichen Willkomen <br><li> $name $surname</li>";
-//             break;
-//         }
-//         else{
-//             echo "Falsch!";
 
 
 
