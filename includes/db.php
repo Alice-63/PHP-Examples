@@ -29,8 +29,6 @@
 
 // foreach ($rows as $row ) {
 
-//     print_r($row);
-
 
 
 // try{
