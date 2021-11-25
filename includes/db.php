@@ -30,11 +30,7 @@
 // foreach ($rows as $row ) {
 
 //     print_r($row);
-  
-//     // echo "Personelin Adi: ". $row["first_name"]."<br>";
-//     // echo "Personelin Soyadi: ". $row["last_name"]."<br>";
-//     // echo "<hr>";
-// }
+
 
 
 // try{
