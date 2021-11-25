@@ -66,12 +66,6 @@
 
 // $result=$update->execute($data);
 
-// if($update){
-//     echo "basarilidir";
-// }
-// else{
-//     echo "Basarisiz";
-// }
 
 // try{
 //     $db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
