@@ -79,12 +79,8 @@
 
 // $result=$del->execute($data);
 
-// if($del){
-//     echo "Basarilidir";
-// }
-// else{
-//     echo "Basarisiz...";
-// }
+
+
 
 // try{
 //     $db=new PDO("mysql:host=localhost;dbname=notbook;charset=utf8","root","");
