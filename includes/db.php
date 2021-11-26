@@ -72,7 +72,7 @@
 // }catch(PDOException $e){
 //     echo $e->getMessage();
 // }
-// $id=11;
+
 // $del=$db->prepare("DELETE FROM personel_list WHERE id=:id");
 
 // $data=array("id"=>$id);
