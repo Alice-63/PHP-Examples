@@ -79,7 +79,7 @@
 
 // $result=$del->execute($data);
 
-$db=new mysqli($server,$user,$pass,$dbname)
+
 
 
 
