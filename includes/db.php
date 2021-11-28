@@ -80,7 +80,7 @@
 // $result=$del->execute($data);
 
 $db=new mysqli($server,$user,$pass,$dbname)
-$db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","")
+
 
 
 
