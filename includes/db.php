@@ -73,10 +73,6 @@
 //     echo $e->getMessage();
 // }
 
-// $del=$db->prepare("DELETE FROM personel_list WHERE id=:id");
-
-// $data=array("id"=>$id);
-
 
 
 
