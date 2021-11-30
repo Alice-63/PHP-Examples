@@ -58,7 +58,7 @@
 // }catch(PDOExpection $e){
 
 //     echo $e->getMessage();
-// }
+
 
 // $update=$db->prepare("UPDATE personel_list SET first_name=:first_name,last_name=:last_name where id=:id");
 
@@ -67,9 +67,7 @@
 // $result=$update->execute($data);
 
 
-// try{
-//     $db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
-// }
+
 
 
 
