@@ -77,7 +77,6 @@
 
 // $data=array("id"=>$id);
 
-// $result=$del->execute($data);
 
 
 
