@@ -57,7 +57,7 @@
 // $db=new PDO("mysql:host=localhost;dbname=person;charset=utf8","root","");
 // }catch(PDOExpection $e){
 
-//     echo $e->getMessage();
+
 
 
 
