@@ -62,7 +62,7 @@
 
 // $update=$db->prepare("UPDATE personel_list SET first_name=:first_name,last_name=:last_name where id=:id");
 
-// $data=array("first_name"=>"Meryem","last_name"=>"Efe", "id"=>30);
+
 
 
 
