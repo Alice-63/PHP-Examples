@@ -64,7 +64,7 @@
 
 // $data=array("first_name"=>"Meryem","last_name"=>"Efe", "id"=>30);
 
-// $result=$update->execute($data);
+
 
 
 
